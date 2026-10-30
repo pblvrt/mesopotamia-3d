@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Interactive 3D map of Mesopotamia in the age of Hammurabi of Babylon (c. 1792–1750 BC): terrain, ancient rivers and coastline, cities at true scale." />
+    <meta name="theme-color" content="#2a1f14" />
+    <title>Mesopotamia in the Age of Hammurabi</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232a1f14'/%3E%3Cpath d='M8 24h16M10 24V12l6-5 6 5v12M14 24v-6h4v6' stroke='%23e0b86a' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="viewport"></div>
+
+    <div id="loading">
+      <div class="loading-inner">
+        <svg class="seal" viewBox="0 0 120 70" aria-hidden="true"><path d="M10 64h100M22 64V50h76v14M34 50V36h52v14M46 36V22h28v14M56 22V12h8v10M60 64V50" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+        <h1>Mesopotamia in the Age of Hammurabi</h1>
+        <p class="sub">c. 1792 – 1750 BC</p>
+        <div class="progress"><div class="progress-bar"></div></div>
+        <p id="loading-status">Preparing the land between the rivers…</p>
+      </div>
+    </div>
+
+    <header id="titlebar">
+      <h1>Mesopotamia <span>in the Age of Hammurabi</span></h1>
+      <p>c. 1792 – 1750 BC · cities at true scale</p>
+    </header>
+
+    <button id="controls-toggle" class="icon-btn" aria-label="Show layers and tools" aria-expanded="false">☰</button>
+
+    <aside id="controls" class="panel">
+      <section>
+        <h2>Coastline</h2>
+        <div class="seg" role="radiogroup" aria-label="Coastline">
+          <label><input type="radio" name="coast" value="ancient" checked /> <span>Ancient c. 1750 BC</span></label>
+          <label><input type="radio" name="coast" value="modern" /> <span>Modern</span></label>
+        </div>
+      </section>
+      <section>
+        <h2>Layers</h2>
+        <label class="chk"><input type="checkbox" id="lyr-rivers" checked /> Rivers &amp; canals</label>
+        <label class="chk"><input type="checkbox" id="lyr-cities" checked /> City footprints</label>
+        <label class="chk"><input type="checkbox" id="lyr-labels" checked /> Labels</label>
+        <label class="chk"><input type="checkbox" id="lyr-polities" checked /> Polity colours</label>
+        <label class="chk"><input type="checkbox" id="lyr-timeline" checked /> Timeline</label>
+      </section>
+      <section>
+        <h2>Vertical exaggeration <output id="exag-val">15×</output></h2>
+        <input type="range" id="exag" min="1" max="40" step="1" value="15" aria-label="Vertical exaggeration" />
+      </section>
+      <section>
+        <h2>Tools</h2>
+        <button id="btn-measure" class="btn" aria-pressed="false">📏 Measure distance</button>
+        <button id="btn-overview" class="btn">🗺 Overview</button>
+        <div id="measure-result" class="note" hidden></div>
+      </section>
+      <section>
+        <h2>Legend</h2>
+        <div id="legend"></div>
+      </section>
+      <p class="hint">Drag to pan · right-drag (or two fingers) to rotate · scroll/pinch to zoom · click a city</p>
+    </aside>
+
+    <aside id="city-panel" class="panel" hidden aria-live="polite">
+      <button class="close icon-btn" aria-label="Close">×</button>
+      <div class="content"></div>
+    </aside>
+
+    <section id="timeline" class="panel">
+      <div class="tl-row">
+        <button id="tl-play" class="icon-btn" aria-label="Play timeline">▶</button>
+        <div class="tl-slider">
+          <input type="range" id="tl-year" min="-1792" max="-1750" step="1" value="-1792" aria-label="Year" />
+          <div id="tl-ticks"></div>
+        </div>
+        <div id="tl-label"></div>
+      </div>
+      <div id="tl-card"></div>
+    </section>
+
+    <div id="scalebar"><div class="bar"></div><div class="txt"></div></div>
+
+    <footer id="attribution"></footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

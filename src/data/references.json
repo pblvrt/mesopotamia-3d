@@ -1,0 +1,343 @@
+[
+ {
+  "id": "football",
+  "name": "Football pitch (105 x 68 m)",
+  "areaHa": 0.714,
+  "footprint": {
+   "type": "rect",
+   "widthKm": 0.105,
+   "heightKm": 0.068,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.052,
+     -0.034
+    ],
+    [
+     0.052,
+     -0.034
+    ],
+    [
+     0.052,
+     0.034
+    ],
+    [
+     -0.052,
+     0.034
+    ]
+   ]
+  },
+  "note": "FIFA-recommended pitch."
+ },
+ {
+  "id": "vatican",
+  "name": "Vatican City",
+  "areaHa": 49,
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 0.87,
+   "heightKm": 0.712,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.469,
+     0.068
+    ],
+    [
+     -0.271,
+     0.345
+    ],
+    [
+     0.124,
+     0.345
+    ],
+    [
+     0.401,
+     0.147
+    ],
+    [
+     0.401,
+     -0.249
+    ],
+    [
+     0.124,
+     -0.367
+    ],
+    [
+     -0.311,
+     -0.288
+    ]
+   ]
+  },
+  "note": "Smallest sovereign state, 0.49 km2; about the size of OB Assur."
+ },
+ {
+  "id": "city_of_london",
+  "name": "City of London (Square Mile)",
+  "areaHa": 290,
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 2.68,
+   "heightKm": 1.286,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -1.376,
+     0.357
+    ],
+    [
+     -0.733,
+     0.572
+    ],
+    [
+     0.125,
+     0.625
+    ],
+    [
+     0.875,
+     0.518
+    ],
+    [
+     1.304,
+     0.143
+    ],
+    [
+     1.197,
+     -0.5
+    ],
+    [
+     0.447,
+     -0.661
+    ],
+    [
+     -0.518,
+     -0.661
+    ],
+    [
+     -1.322,
+     -0.393
+    ]
+   ]
+  },
+  "note": "2.9 km2 - about the size of round Mari."
+ },
+ {
+  "id": "central_park",
+  "name": "Central Park, New York",
+  "areaHa": 341,
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 2.714,
+   "heightKm": 3.988,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -1.357,
+     -1.592
+    ],
+    [
+     -0.631,
+     -1.994
+    ],
+    [
+     1.357,
+     1.592
+    ],
+    [
+     0.631,
+     1.994
+    ]
+   ],
+   "shapeNote": "4.1 x 0.83 km, long axis 29 deg east of north (Manhattan grid)"
+  },
+  "note": "341 ha; rectangle 4.1 x 0.83 km (area of rectangle ~340 ha)."
+ },
+ {
+  "id": "manhattan",
+  "name": "Manhattan",
+  "areaHa": 5910,
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 10.31,
+   "heightKm": 17.927,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     4.176,
+     9.275
+    ],
+    [
+     4.77,
+     8.629
+    ],
+    [
+     4.377,
+     6.202
+    ],
+    [
+     3.678,
+     3.416
+    ],
+    [
+     2.656,
+     0.809
+    ],
+    [
+     1.597,
+     -0.72
+    ],
+    [
+     0.09,
+     -3.058
+    ],
+    [
+     -1.175,
+     -5.531
+    ],
+    [
+     -2.62,
+     -7.374
+    ],
+    [
+     -4.703,
+     -8.652
+    ],
+    [
+     -5.54,
+     -7.871
+    ],
+    [
+     -4.985,
+     -5.534
+    ],
+    [
+     -3.434,
+     -2.163
+    ],
+    [
+     -1.558,
+     1.029
+    ],
+    [
+     0.317,
+     4.221
+    ],
+    [
+     2.354,
+     7.323
+    ]
+   ]
+  },
+  "note": "59.1 km2 land area, ~21.6 km long and up to 3.7 km wide; shape approximate."
+ },
+ {
+  "id": "paris",
+  "name": "Paris inside the Boulevard Périphérique",
+  "areaHa": 8700,
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 11.5,
+   "heightKm": 9.6,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     5.75,
+     0.0
+    ],
+    [
+     5.554,
+     1.242
+    ],
+    [
+     4.98,
+     2.4
+    ],
+    [
+     4.066,
+     3.394
+    ],
+    [
+     2.875,
+     4.157
+    ],
+    [
+     1.488,
+     4.636
+    ],
+    [
+     0.0,
+     4.8
+    ],
+    [
+     -1.488,
+     4.636
+    ],
+    [
+     -2.875,
+     4.157
+    ],
+    [
+     -4.066,
+     3.394
+    ],
+    [
+     -4.98,
+     2.4
+    ],
+    [
+     -5.554,
+     1.242
+    ],
+    [
+     -5.75,
+     0.0
+    ],
+    [
+     -5.554,
+     -1.242
+    ],
+    [
+     -4.98,
+     -2.4
+    ],
+    [
+     -4.066,
+     -3.394
+    ],
+    [
+     -2.875,
+     -4.157
+    ],
+    [
+     -1.488,
+     -4.636
+    ],
+    [
+     -0.0,
+     -4.8
+    ],
+    [
+     1.488,
+     -4.636
+    ],
+    [
+     2.875,
+     -4.157
+    ],
+    [
+     4.066,
+     -3.394
+    ],
+    [
+     4.98,
+     -2.4
+    ],
+    [
+     5.554,
+     -1.242
+    ]
+   ]
+  },
+  "note": "Commune of Paris is 105 km2 including the Bois de Boulogne and Vincennes; inside the ring road ~87 km2. Approximated as an ellipse 11.5 x 9.6 km."
+ }
+]

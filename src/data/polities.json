@@ -1,0 +1,132 @@
+[
+ {
+  "id": "babylon",
+  "name": "Babylon (First Dynasty)",
+  "ruler": "Hammurabi (1792-1750 BC)",
+  "color": "#E0A82E",
+  "capital": "babylon",
+  "description": "Amorite kingdom on the Euphrates around Babylon, Sippar, Kish and Borsippa that Hammurabi turned into an empire.",
+  "status1792": "Mid-sized kingdom (~ Sippar to Dilbat, roughly 100 x 60 km), junior ally of Shamshi-Adad and wary neighbour of Larsa and Eshnunna.",
+  "status1750": "Empire of southern and central Mesopotamia from the Gulf to Mari and the Diyala; overlord of Ekallatum and much of the north."
+ },
+ {
+  "id": "larsa",
+  "name": "Larsa",
+  "ruler": "Rim-Sin I (c. 1822-1763 BC)",
+  "color": "#C0392B",
+  "capital": "larsa",
+  "description": "Kingdom of the far south, the dominant power of Sumer after Rim-Sin conquered Uruk (1802) and Isin (1794).",
+  "status1792": "Largest state in the south: Larsa, Ur, Uruk, Isin, Nippur, Mashkan-shapir, Lagash.",
+  "status1750": "Gone: conquered by Hammurabi in 1763; Rim-Sin taken prisoner. A Rim-Sin II revolted briefly under Samsu-iluna (1739)."
+ },
+ {
+  "id": "eshnunna",
+  "name": "Eshnunna",
+  "ruler": "Dadusha (to c. 1780), then Ibal-pi-El II (c. 1779-1765)",
+  "color": "#2E86C1",
+  "capital": "eshnunna",
+  "description": "Diyala kingdom controlling routes to the Zagros and Elam; produced the Laws of Eshnunna.",
+  "status1792": "Strong regional power expanding up the Tigris and Euphrates (it had held Rapiqum and Ekallatum's neighbourhood).",
+  "status1750": "Annexed by Babylon (defeated 1762, city devastated c. 1756)."
+ },
+ {
+  "id": "mari",
+  "name": "Mari",
+  "ruler": "Zimri-Lim (1775-1761 BC)",
+  "color": "#8E44AD",
+  "capital": "mari",
+  "description": "Middle Euphrates kingdom of Mari, Terqa and Tuttul; its palace archive is our main window on the age.",
+  "status1792": "Province of Shamshi-Adad's kingdom, ruled by his son Yasmah-Addu.",
+  "status1750": "Destroyed by Hammurabi (1761/1759); region later becomes the kingdom of Hana centred on Terqa."
+ },
+ {
+  "id": "upper_mesopotamia",
+  "name": "Upper Mesopotamia / Ekallatum (Assyria)",
+  "ruler": "Shamshi-Adad I (d. c. 1776), then Ishme-Dagan I",
+  "color": "#27AE60",
+  "capital": "ekallatum",
+  "description": "Shamshi-Adad's 'Kingdom of Upper Mesopotamia' from the Zagros to the Euphrates, with capitals at Shubat-Enlil, Ekallatum (Ishme-Dagan) and Mari (Yasmah-Addu); includes Assur.",
+  "status1792": "At its height: the strongest state in Mesopotamia.",
+  "status1750": "Collapsed after 1776; Ishme-Dagan holds a rump around Ekallatum and Assur as a Babylonian client."
+ },
+ {
+  "id": "elam",
+  "name": "Elam (sukkalmah dynasty)",
+  "ruler": "Siwe-palar-huppak (sukkalmah c. 1770s-1760s)",
+  "color": "#E67E22",
+  "capital": "susa",
+  "description": "Iranian power with lowland capital at Susa and highland base at Anshan; recognised as overlord by Mesopotamian kings until 1765.",
+  "status1792": "Distant senior power; arbiter of Mesopotamian disputes.",
+  "status1750": "Driven back to Susiana after the failed invasion of 1766-1764; independent."
+ },
+ {
+  "id": "yamhad",
+  "name": "Yamhad",
+  "ruler": "Yarim-Lim I (c. 1780-1764), then Hammurabi I of Yamhad",
+  "color": "#16A085",
+  "capital": "aleppo",
+  "description": "Kingdom of Aleppo, the greatest power of northern Syria.",
+  "status1792": "Rising under Sumu-epuh, in conflict with Shamshi-Adad and Qatna.",
+  "status1750": "Independent and powerful; dominant in Syria."
+ },
+ {
+  "id": "qatna",
+  "name": "Qatna",
+  "ruler": "Ishi-Addu, then Amut-pi-El II",
+  "color": "#EC6FA0",
+  "capital": "qatna",
+  "description": "Western Syrian kingdom, rival of Yamhad, allied to Shamshi-Adad.",
+  "status1792": "Independent ally of Shamshi-Adad.",
+  "status1750": "Independent."
+ },
+ {
+  "id": "malgium",
+  "name": "Malgium",
+  "ruler": "Ipiq-Ishtar, then Takil-ilissu",
+  "color": "#8D6E63",
+  "capital": "malgium",
+  "description": "Small Tigris kingdom between Eshnunna and Larsa.",
+  "status1792": "Independent buffer state.",
+  "status1750": "Destroyed and annexed by Babylon (1759)."
+ },
+ {
+  "id": "der",
+  "name": "Der",
+  "ruler": "local kings (e.g. Yasub-Yahad)",
+  "color": "#A5A230",
+  "capital": "der",
+  "description": "Gate-kingdom on the road to Elam at the Zagros foot.",
+  "status1792": "Independent, under Elamite influence.",
+  "status1750": "Uncertain; probably in Babylon's sphere."
+ },
+ {
+  "id": "apum",
+  "name": "Apum (Shubat-Enlil)",
+  "ruler": "Turum-natki, Zuzu and successors",
+  "color": "#00ACC1",
+  "capital": "shubat_enlil",
+  "description": "Khabur-triangle kingdom based in Shamshi-Adad's former capital, one of many small 'Ida-Maras' and Habur kingdoms.",
+  "status1792": "Heart of Shamshi-Adad's kingdom.",
+  "status1750": "Small independent kingdom (later sacked by Samsu-iluna, 1728)."
+ },
+ {
+  "id": "zagros",
+  "name": "Zagros & Hurrian highland polities",
+  "ruler": "Kuwari of Utûm; Turukkean and Gutian chiefs",
+  "color": "#78909C",
+  "capital": "shusharra",
+  "description": "Highland principalities east of the Tigris (Utûm, Qabra, Turukku, Gutium) fought over by Shamshi-Adad, Eshnunna, Elam and Babylon.",
+  "status1792": "Independent; soon targeted by Shamshi-Adad's Qabra campaign (c. 1781).",
+  "status1750": "Raided by Hammurabi (years 37 and 39) but not durably controlled."
+ },
+ {
+  "id": "other",
+  "name": "Minor / uncertain polities",
+  "ruler": "various",
+  "color": "#9E9E9E",
+  "capital": "karana",
+  "description": "Small kingdoms (Karana, Kurda, Andarig, Ida-Maras) or places whose allegiance at a given date is uncertain.",
+  "status1792": "Mostly under Shamshi-Adad.",
+  "status1750": "Mostly Babylonian vassals or unknown."
+ }
+]

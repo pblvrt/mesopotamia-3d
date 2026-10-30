@@ -1,0 +1,5 @@
+[
+  {"id":"babylon","name":"Babylon","ruler":"Hammurabi","color":"#c0392b","capital":"babylon","description":"FIXTURE","status1792":"small kingdom","status1750":"empire"},
+  {"id":"larsa","name":"Larsa","ruler":"Rim-Sin I","color":"#2e86c1","capital":"larsa","description":"FIXTURE","status1792":"dominant in south","status1750":"conquered"},
+  {"id":"mari","name":"Mari","ruler":"Zimri-Lim","color":"#27ae60","capital":"mari","description":"FIXTURE","status1792":"under Shamshi-Adad","status1750":"destroyed"}
+]

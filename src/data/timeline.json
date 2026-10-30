@@ -1,0 +1,199 @@
+[
+ {
+  "year": -1792,
+  "title": "Hammurabi becomes king of Babylon",
+  "text": "Hammurabi succeeds his father Sin-muballit and proclaims a debt remission (mīšarum). Shamshi-Adad dominates the north, Rim-Sin of Larsa the south (he had taken Isin two years earlier).",
+  "cities": [
+   "babylon",
+   "larsa",
+   "shubat_enlil"
+  ]
+ },
+ {
+  "year": -1787,
+  "title": "Raid on Uruk and Isin",
+  "text": "Hammurabi's year-7 name celebrates seizing Uruk and Isin from Larsa, but both soon return to Rim-Sin.",
+  "cities": [
+   "uruk",
+   "isin",
+   "larsa"
+  ]
+ },
+ {
+  "year": -1784,
+  "title": "Malgium pays tribute",
+  "text": "Allied with Shamshi-Adad and Eshnunna, Hammurabi defeats Malgium, which buys peace with 15 talents of silver (year 10 name).",
+  "cities": [
+   "malgium",
+   "eshnunna"
+  ]
+ },
+ {
+  "year": -1783,
+  "title": "Rapiqum added to Babylon",
+  "text": "Shamshi-Adad takes Rapiqum on the Euphrates from Eshnunna and hands it to Hammurabi (year 11 name).",
+  "cities": [
+   "rapiqum",
+   "sippar"
+  ]
+ },
+ {
+  "year": -1781,
+  "title": "Shamshi-Adad's Zagros campaign",
+  "text": "Shamshi-Adad and Ishme-Dagan campaign against Qabra and Arbela; letters to Kuwari of Shusharra document the war.",
+  "cities": [
+   "arbela",
+   "shusharra",
+   "ekallatum"
+  ]
+ },
+ {
+  "year": -1776,
+  "title": "Death of Shamshi-Adad",
+  "text": "The founder of the Kingdom of Upper Mesopotamia dies (c. 1776/1775). His realm fragments; Ishme-Dagan keeps Ekallatum and Assur.",
+  "cities": [
+   "shubat_enlil",
+   "ekallatum",
+   "assur"
+  ]
+ },
+ {
+  "year": -1775,
+  "title": "Zimri-Lim takes Mari",
+  "text": "With Yamhad's backing Zimri-Lim ousts Yasmah-Addu and becomes king of Mari, marrying Shibtu, daughter of Yarim-Lim of Aleppo.",
+  "cities": [
+   "mari",
+   "aleppo",
+   "terqa"
+  ]
+ },
+ {
+  "year": -1772,
+  "title": "'No king is strong by himself'",
+  "text": "A Mari letter of this period: 'Ten or fifteen kings follow Hammurabi of Babylon, as many follow Rim-Sin of Larsa, Ibal-pi-El of Eshnunna and Amut-pi-El of Qatna; twenty kings follow Yarim-Lim of Yamhad.' (approximate date)",
+  "cities": [
+   "babylon",
+   "larsa",
+   "eshnunna",
+   "qatna",
+   "aleppo"
+  ]
+ },
+ {
+  "year": -1766,
+  "title": "Elam invades and takes Eshnunna",
+  "text": "The sukkalmah Siwe-palar-huppak, with Babylon and Mari initially as allies, captures Eshnunna and pushes up the Tigris (approx. 1766-1765).",
+  "cities": [
+   "susa",
+   "eshnunna"
+  ]
+ },
+ {
+  "year": -1765,
+  "title": "Elam turns on Babylon",
+  "text": "Elamite armies besiege Razama and occupy Shubat-Enlil; Elam demands Babylon's submission. Hammurabi and Zimri-Lim form a coalition; Rim-Sin stays aloof.",
+  "cities": [
+   "susa",
+   "shubat_enlil",
+   "babylon",
+   "mari"
+  ]
+ },
+ {
+  "year": -1764,
+  "title": "Elamite coalition defeated",
+  "text": "Hammurabi's year-30 name records defeating the army of Elam with Subartu, Gutium, Eshnunna and Malgium. Elam withdraws.",
+  "cities": [
+   "babylon",
+   "susa",
+   "eshnunna"
+  ]
+ },
+ {
+  "year": -1763,
+  "title": "Fall of Larsa",
+  "text": "After Mashkan-shapir surrenders and a siege of about six months, Larsa falls; Rim-Sin is captured. Hammurabi rules all of Sumer and Akkad (year 31 name).",
+  "cities": [
+   "larsa",
+   "mashkan_shapir",
+   "ur",
+   "uruk",
+   "isin",
+   "nippur"
+  ]
+ },
+ {
+  "year": -1762,
+  "title": "Eshnunna defeated",
+  "text": "Babylon defeats the armies of Eshnunna, Subartu and Gutium (year 32 name) and takes Mankisum on the Tigris.",
+  "cities": [
+   "eshnunna",
+   "tutub"
+  ]
+ },
+ {
+  "year": -1761,
+  "title": "Mari conquered",
+  "text": "Hammurabi turns on his ally Zimri-Lim and takes Mari (year 33 name). The same year he digs the canal 'Hammurabi is the abundance of the people' supplying Nippur, Eridu, Ur, Larsa, Uruk and Isin.",
+  "cities": [
+   "mari",
+   "malgium",
+   "nippur",
+   "ur"
+  ]
+ },
+ {
+  "year": -1759,
+  "title": "Mari and Malgium destroyed",
+  "text": "Hammurabi demolishes the walls of Mari and Malgium (year 35 name). Mari's palace is burnt - preserving the 20,000-tablet archive found in the 1930s.",
+  "cities": [
+   "mari",
+   "malgium",
+   "terqa"
+  ]
+ },
+ {
+  "year": -1757,
+  "title": "Ziggurat of Kish rebuilt",
+  "text": "Year 36: Hammurabi restores the temple-tower of Zababa and Inanna at Kish.",
+  "cities": [
+   "kish"
+  ]
+ },
+ {
+  "year": -1756,
+  "title": "Northern campaign",
+  "text": "Hammurabi defeats Subartu, Turukkum and Gutium (year 37 name); he campaigns again in the north in later years.",
+  "cities": [
+   "assur",
+   "nineveh",
+   "arbela"
+  ]
+ },
+ {
+  "year": -1755,
+  "title": "Eshnunna flooded",
+  "text": "Year 38: Hammurabi destroys Eshnunna 'with a great flood' - perhaps by breaching Diyala dykes.",
+  "cities": [
+   "eshnunna"
+  ]
+ },
+ {
+  "year": -1754,
+  "title": "Code of Hammurabi",
+  "text": "Approximate date of the Code: 282 laws under a relief of Hammurabi before Shamash, set up in temples (one copy probably at Sippar). The basalt stele was carried to Susa c. 1158 BC and found there in 1901.",
+  "cities": [
+   "babylon",
+   "sippar",
+   "susa"
+  ]
+ },
+ {
+  "year": -1750,
+  "title": "Death of Hammurabi",
+  "text": "Hammurabi dies in his 43rd year; his son Samsu-iluna inherits an empire that will begin to break apart within a decade (revolt of Rim-Sin II, 1739).",
+  "cities": [
+   "babylon"
+  ]
+ }
+]

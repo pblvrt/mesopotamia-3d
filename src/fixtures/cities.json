@@ -1,0 +1,15 @@
+[
+  {"id":"babylon","name":"Babylon","akkadian":"Bābilim","modernName":"Hillah, Iraq","lat":32.536,"lon":44.421,
+   "areaHa":200,"areaNote":"FIXTURE value — Old Babylonian extent very uncertain (later Neo-Babylonian city ~850 ha).",
+   "populationEstimate":{"low":20000,"high":50000},
+   "footprint":{"type":"rect","widthKm":1.6,"heightKm":1.25,"rotationDeg":0},
+   "polity":"babylon","tier":1,"founded":"3rd millennium BC","description":"FIXTURE. Capital of Hammurabi's kingdom on the Euphrates.","hammurabiEra":"FIXTURE. Seat of Hammurabi (r. 1792–1750 BC).","sources":["fixture"]},
+  {"id":"larsa","name":"Larsa","akkadian":"Larsa","modernName":"Tell es-Senkereh, Iraq","lat":31.285,"lon":45.853,
+   "areaHa":190,"areaNote":"FIXTURE","populationEstimate":{"low":15000,"high":40000},
+   "footprint":{"type":"ellipse","widthKm":1.7,"heightKm":1.4,"rotationDeg":20},
+   "polity":"larsa","tier":1,"founded":"3rd millennium BC","description":"FIXTURE. Capital of Rim-Sin.","hammurabiEra":"FIXTURE. Conquered by Hammurabi in 1763 BC.","sources":["fixture"]},
+  {"id":"mari","name":"Mari","akkadian":"Mari","modernName":"Tell Hariri, Syria","lat":34.549,"lon":40.889,
+   "areaHa":60,"areaNote":"FIXTURE","populationEstimate":{"low":5000,"high":15000},
+   "footprint":{"type":"polygon","pointsKm":[[-0.9,0],[-0.6,0.7],[0.2,0.95],[0.8,0.3],[0.6,-0.6],[-0.4,-0.85]]},
+   "polity":"mari","tier":2,"founded":"c. 2900 BC","description":"FIXTURE. Kingdom of Zimri-Lim on the middle Euphrates.","hammurabiEra":"FIXTURE. Taken by Hammurabi 1761 BC.","sources":["fixture"]}
+]

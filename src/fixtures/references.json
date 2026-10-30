@@ -1,0 +1,4 @@
+[
+ {"id":"central-park","name":"Central Park, New York","areaHa":341,"footprint":{"type":"rect","widthKm":0.8,"heightKm":4.0,"rotationDeg":-29}},
+ {"id":"city-of-london","name":"City of London (Square Mile)","areaHa":290,"footprint":{"type":"ellipse","widthKm":2.4,"heightKm":1.5,"rotationDeg":0}}
+]

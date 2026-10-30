@@ -1,0 +1,22 @@
+{
+  "bbox": {
+    "west": 37.5,
+    "east": 50.5,
+    "south": 28.5,
+    "north": 38.5
+  },
+  "width": 2048,
+  "height": 1866,
+  "minElevation": -90.75,
+  "maxElevation": 4731.25,
+  "encoding": "terrarium",
+  "source": "Terrain Tiles: Mapzen/AWS Open Data, includes SRTM, GMTED, ETOPO1",
+  "pixelRegistration": "area",
+  "lo": {
+    "file": "height-lo.png",
+    "width": 512,
+    "height": 466
+  },
+  "relief": "relief.jpg",
+  "zoom": 8
+}

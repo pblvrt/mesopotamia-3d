@@ -1,0 +1,4130 @@
+[
+ {
+  "id": "babylon",
+  "name": "Babylon",
+  "akkadian": "Bābilim (KÁ.DINGIR.RA)",
+  "modernName": "Tell Babil / Hillah, Babil Governorate, Iraq",
+  "lat": 32.536,
+  "lon": 44.421,
+  "areaHa": 400,
+  "areaNote": "Old Babylonian levels lie below the modern water table and are known only from small soundings (Merkes quarter), so Hammurabi's city size is a guess: roughly 200-600 ha, shown as ~400 ha. The famous ~850-1,000 ha figure is the Neo-Babylonian (6th c. BC) city of Nebuchadnezzar; the footprint here uses the same rectangular plan straddling the Euphrates but smaller.",
+  "populationEstimate": {
+   "low": 20000,
+   "high": 80000
+  },
+  "footprint": {
+   "type": "rect",
+   "widthKm": 1.6,
+   "heightKm": 2.5,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.8,
+     -1.25
+    ],
+    [
+     0.8,
+     -1.25
+    ],
+    [
+     0.8,
+     1.25
+    ],
+    [
+     -0.8,
+     1.25
+    ]
+   ]
+  },
+  "polity": "babylon",
+  "polity1792": "babylon",
+  "polity1750": "babylon",
+  "tier": 1,
+  "founded": "Mentioned from the Akkadian period (c. 2300 BC); a minor town until the Amorite dynasty of Sumu-abum (c. 1894 BC).",
+  "description": "Capital of the First Dynasty of Babylon on the Euphrates (Arahtu branch). Under Hammurabi it rose from one of several mid-sized Amorite kingdoms to the capital of all southern Mesopotamia. Seat of the god Marduk (Esagil temple), whose rise to supremacy began in this period.",
+  "hammurabiEra": "Hammurabi succeeded his father Sin-muballit in 1792 BC. From here he balanced alliances with Shamshi-Adad, Zimri-Lim of Mari and Rim-Sin of Larsa, then after the Elamite war (1765-1764) conquered Larsa (1763), Eshnunna (1762) and Mari (1761). By his death in 1750 Babylon ruled from the Gulf to the middle Euphrates; the Code of Hammurabi was promulgated here near the end of the reign.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Pedersén, Babylon: The Great City (2021)",
+   "Van De Mieroop, King Hammurabi of Babylon (2005)"
+  ]
+ },
+ {
+  "id": "sippar",
+  "name": "Sippar",
+  "akkadian": "Sippar(-Yahrurum)",
+  "modernName": "Tell Abu Habbah, Iraq",
+  "lat": 33.059,
+  "lon": 44.252,
+  "areaHa": 100,
+  "areaNote": "Main mound c. 1.3 x 0.8 km; twin city Sippar-Amnanum (Tell ed-Der) lies ~7 km to the SE. OB extent of Abu Habbah estimated ~80-120 ha.",
+  "populationEstimate": {
+   "low": 10000,
+   "high": 30000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 1.234,
+   "heightKm": 1.136,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.547,
+     0.459
+    ],
+    [
+     0.454,
+     0.531
+    ],
+    [
+     0.33,
+     0.568
+    ],
+    [
+     0.184,
+     0.566
+    ],
+    [
+     0.025,
+     0.525
+    ],
+    [
+     -0.135,
+     0.449
+    ],
+    [
+     -0.287,
+     0.342
+    ],
+    [
+     -0.418,
+     0.211
+    ],
+    [
+     -0.522,
+     0.067
+    ],
+    [
+     -0.589,
+     -0.083
+    ],
+    [
+     -0.617,
+     -0.226
+    ],
+    [
+     -0.602,
+     -0.355
+    ],
+    [
+     -0.547,
+     -0.459
+    ],
+    [
+     -0.454,
+     -0.531
+    ],
+    [
+     -0.33,
+     -0.568
+    ],
+    [
+     -0.184,
+     -0.566
+    ],
+    [
+     -0.025,
+     -0.525
+    ],
+    [
+     0.135,
+     -0.449
+    ],
+    [
+     0.287,
+     -0.342
+    ],
+    [
+     0.418,
+     -0.211
+    ],
+    [
+     0.522,
+     -0.067
+    ],
+    [
+     0.589,
+     0.083
+    ],
+    [
+     0.617,
+     0.226
+    ],
+    [
+     0.602,
+     0.355
+    ]
+   ],
+   "shapeNote": "ellipse 1.427x0.892 km rotated -40 deg clockwise, given as polygon"
+  },
+  "polity": "babylon",
+  "polity1792": "babylon",
+  "polity1750": "babylon",
+  "tier": 2,
+  "founded": "Uruk/Jemdet Nasr period (late 4th millennium BC).",
+  "description": "Cult city of the sun god Shamash (Ebabbar temple) at the northern gateway of Babylonia on the Euphrates. Famous for its cloister (gagûm) of naditu women, whose business archives are among the richest Old Babylonian records.",
+  "hammurabiEra": "A core city of Hammurabi's kingdom; he rebuilt Sippar's wall (year name 25 and later) and the Ebabbar. Its Shamash cult is invoked on the Code of Hammurabi stele, which may originally have stood in Sippar before being carried to Susa by the Elamites c. 1158 BC.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Harris, Ancient Sippar (1975)",
+   "Charpin, Hammurabi of Babylon (2012)"
+  ]
+ },
+ {
+  "id": "kish",
+  "name": "Kish",
+  "akkadian": "Kiš",
+  "modernName": "Tell al-Uhaymir and Tell Ingharra, Iraq",
+  "lat": 32.541,
+  "lon": 44.605,
+  "areaHa": 150,
+  "areaNote": "Kish is a scatter of mounds over ~5 km E-W. The OB town centred on Uhaymir (Zababa temple) and Ingharra; occupied area perhaps 100-200 ha.",
+  "populationEstimate": {
+   "low": 8000,
+   "high": 30000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 2.764,
+   "heightKm": 0.691,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     1.382,
+     0.0
+    ],
+    [
+     1.335,
+     0.089
+    ],
+    [
+     1.197,
+     0.173
+    ],
+    [
+     0.977,
+     0.244
+    ],
+    [
+     0.691,
+     0.299
+    ],
+    [
+     0.358,
+     0.334
+    ],
+    [
+     0.0,
+     0.345
+    ],
+    [
+     -0.358,
+     0.334
+    ],
+    [
+     -0.691,
+     0.299
+    ],
+    [
+     -0.977,
+     0.244
+    ],
+    [
+     -1.197,
+     0.173
+    ],
+    [
+     -1.335,
+     0.089
+    ],
+    [
+     -1.382,
+     0.0
+    ],
+    [
+     -1.335,
+     -0.089
+    ],
+    [
+     -1.197,
+     -0.173
+    ],
+    [
+     -0.977,
+     -0.244
+    ],
+    [
+     -0.691,
+     -0.299
+    ],
+    [
+     -0.358,
+     -0.334
+    ],
+    [
+     -0.0,
+     -0.345
+    ],
+    [
+     0.358,
+     -0.334
+    ],
+    [
+     0.691,
+     -0.299
+    ],
+    [
+     0.977,
+     -0.244
+    ],
+    [
+     1.197,
+     -0.173
+    ],
+    [
+     1.335,
+     -0.089
+    ]
+   ]
+  },
+  "polity": "babylon",
+  "polity1792": "babylon",
+  "polity1750": "babylon",
+  "tier": 2,
+  "founded": "Early Dynastic (early 3rd millennium BC); its 'kingship' was a title of hegemony.",
+  "description": "Ancient seat of hegemonic kingship in Sumerian tradition, east of Babylon. In the OB period a Babylonian provincial city with temples of Zababa and Inanna.",
+  "hammurabiEra": "Part of Babylon's core. Hammurabi rebuilt the ziggurat of Zababa and Inanna (year 36, c. 1757) and resettled deportees from Malgium here after 1759.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Gibson, The City and Area of Kish (1972)"
+  ]
+ },
+ {
+  "id": "borsippa",
+  "name": "Borsippa",
+  "akkadian": "Barsipa",
+  "modernName": "Birs Nimrud, Iraq",
+  "lat": 32.392,
+  "lon": 44.342,
+  "areaHa": 80,
+  "areaNote": "Neo-Babylonian walled city ~1.5 x 1 km. OB extent unknown; ~50-100 ha assumed.",
+  "populationEstimate": {
+   "low": 4000,
+   "high": 15000
+  },
+  "footprint": {
+   "type": "rect",
+   "widthKm": 1.0,
+   "heightKm": 0.8,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.5,
+     -0.4
+    ],
+    [
+     0.5,
+     -0.4
+    ],
+    [
+     0.5,
+     0.4
+    ],
+    [
+     -0.5,
+     0.4
+    ]
+   ]
+  },
+  "polity": "babylon",
+  "polity1792": "babylon",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "3rd millennium BC (Ur III texts).",
+  "description": "Sister city of Babylon 18 km to the SW, home of Nabu's Ezida temple; its ziggurat ruin is often confused with the Tower of Babel.",
+  "hammurabiEra": "Under Babylon throughout; Hammurabi built (restored) the Ezida at Borsippa according to the Code's prologue.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Code of Hammurabi, prologue"
+  ]
+ },
+ {
+  "id": "kutha",
+  "name": "Kutha",
+  "akkadian": "Gudua / Kutû",
+  "modernName": "Tell Ibrahim, Iraq",
+  "lat": 32.76,
+  "lon": 44.613,
+  "areaHa": 60,
+  "areaNote": "Crescent-shaped main mound ~1.2 km long plus a smaller western mound; largely unexcavated. Area estimated ~50-80 ha.",
+  "populationEstimate": {
+   "low": 3000,
+   "high": 12000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 1.228,
+   "heightKm": 0.704,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.609,
+     0.222
+    ],
+    [
+     0.562,
+     0.286
+    ],
+    [
+     0.477,
+     0.33
+    ],
+    [
+     0.359,
+     0.352
+    ],
+    [
+     0.217,
+     0.35
+    ],
+    [
+     0.06,
+     0.325
+    ],
+    [
+     -0.101,
+     0.277
+    ],
+    [
+     -0.255,
+     0.21
+    ],
+    [
+     -0.392,
+     0.129
+    ],
+    [
+     -0.502,
+     0.039
+    ],
+    [
+     -0.578,
+     -0.054
+    ],
+    [
+     -0.614,
+     -0.142
+    ],
+    [
+     -0.609,
+     -0.222
+    ],
+    [
+     -0.562,
+     -0.286
+    ],
+    [
+     -0.477,
+     -0.33
+    ],
+    [
+     -0.359,
+     -0.352
+    ],
+    [
+     -0.217,
+     -0.35
+    ],
+    [
+     -0.06,
+     -0.325
+    ],
+    [
+     0.101,
+     -0.277
+    ],
+    [
+     0.255,
+     -0.21
+    ],
+    [
+     0.392,
+     -0.129
+    ],
+    [
+     0.502,
+     -0.039
+    ],
+    [
+     0.578,
+     0.054
+    ],
+    [
+     0.614,
+     0.142
+    ]
+   ],
+   "shapeNote": "ellipse 1.296x0.589 km rotated -20 deg clockwise, given as polygon"
+  },
+  "polity": "babylon",
+  "polity1792": "babylon",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "3rd millennium BC.",
+  "description": "Cult city of Nergal, god of the underworld (Emeslam temple), on a canal between Sippar and Kish.",
+  "hammurabiEra": "Babylonian throughout. The Code's prologue praises Hammurabi for enlarging Kutha's Emeslam; year 40 records work for Nergal (Meslamtaea).",
+  "sources": [
+   "Wikipedia (site article, coordinates)"
+  ]
+ },
+ {
+  "id": "dilbat",
+  "name": "Dilbat",
+  "akkadian": "Dilbat",
+  "modernName": "Tell al-Deylam, Iraq",
+  "lat": 32.296,
+  "lon": 44.466,
+  "areaHa": 15,
+  "areaNote": "Site area c. 15 ha (survey); OB occupation probably of similar size.",
+  "populationEstimate": {
+   "low": 1500,
+   "high": 4000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.498,
+   "heightKm": 0.383,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.249,
+     0.0
+    ],
+    [
+     0.241,
+     0.05
+    ],
+    [
+     0.216,
+     0.096
+    ],
+    [
+     0.176,
+     0.135
+    ],
+    [
+     0.125,
+     0.166
+    ],
+    [
+     0.064,
+     0.185
+    ],
+    [
+     0.0,
+     0.192
+    ],
+    [
+     -0.064,
+     0.185
+    ],
+    [
+     -0.124,
+     0.166
+    ],
+    [
+     -0.176,
+     0.135
+    ],
+    [
+     -0.216,
+     0.096
+    ],
+    [
+     -0.241,
+     0.05
+    ],
+    [
+     -0.249,
+     0.0
+    ],
+    [
+     -0.241,
+     -0.05
+    ],
+    [
+     -0.216,
+     -0.096
+    ],
+    [
+     -0.176,
+     -0.135
+    ],
+    [
+     -0.125,
+     -0.166
+    ],
+    [
+     -0.064,
+     -0.185
+    ],
+    [
+     -0.0,
+     -0.192
+    ],
+    [
+     0.064,
+     -0.185
+    ],
+    [
+     0.125,
+     -0.166
+    ],
+    [
+     0.176,
+     -0.135
+    ],
+    [
+     0.216,
+     -0.096
+    ],
+    [
+     0.241,
+     -0.05
+    ]
+   ]
+  },
+  "polity": "babylon",
+  "polity1792": "babylon",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Early Dynastic.",
+  "description": "Small town south of Babylon dedicated to the god Urash; numerous OB legal and administrative tablets come from here.",
+  "hammurabiEra": "Within Babylon's core territory; Code prologue mentions Hammurabi heaping up grain for Urash at Dilbat.",
+  "sources": [
+   "Wikipedia (site article, coordinates)"
+  ]
+ },
+ {
+  "id": "nippur",
+  "name": "Nippur",
+  "akkadian": "Nippur (Sumerian Nibru)",
+  "modernName": "Nuffar, Iraq",
+  "lat": 32.126,
+  "lon": 45.231,
+  "areaHa": 150,
+  "areaNote": "Two mound complexes divided by the dry Shatt en-Nil canal (ancient Euphrates channel): East mound (Ekur temple, ziggurat) and West mound (Tablet Hill, houses). OB walled area ~135-150 ha (Gibson; Stone).",
+  "populationEstimate": {
+   "low": 10000,
+   "high": 30000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 1.548,
+   "heightKm": 1.233,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.743,
+     0.31
+    ],
+    [
+     -0.553,
+     0.563
+    ],
+    [
+     -0.237,
+     0.563
+    ],
+    [
+     -0.079,
+     0.31
+    ],
+    [
+     0.047,
+     0.342
+    ],
+    [
+     0.269,
+     0.595
+    ],
+    [
+     0.585,
+     0.563
+    ],
+    [
+     0.774,
+     0.247
+    ],
+    [
+     0.774,
+     -0.259
+    ],
+    [
+     0.585,
+     -0.606
+    ],
+    [
+     0.237,
+     -0.638
+    ],
+    [
+     0.047,
+     -0.322
+    ],
+    [
+     -0.079,
+     -0.322
+    ],
+    [
+     -0.269,
+     -0.575
+    ],
+    [
+     -0.585,
+     -0.543
+    ],
+    [
+     -0.774,
+     -0.227
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 1,
+  "founded": "Ubaid period (6th millennium BC).",
+  "description": "Religious capital of Sumer, city of Enlil (Ekur). Kings who held Nippur claimed legitimacy over the land; it was the centre of scribal schooling, and most Sumerian literary texts come from OB houses here.",
+  "hammurabiEra": "Held by Rim-Sin of Larsa (taken from Isin) until Hammurabi's conquest of Larsa in 1763, after which Hammurabi styled himself favourite of Enlil. His canal 'Hammurabi is the abundance of the people' (year 33, c. 1760) supplied Nippur and the south.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Stone, Nippur Neighborhoods (1987)",
+   "Gibson, Nippur surveys"
+  ]
+ },
+ {
+  "id": "isin",
+  "name": "Isin",
+  "akkadian": "Isin",
+  "modernName": "Ishan al-Bahriyat, Iraq",
+  "lat": 31.885,
+  "lon": 45.269,
+  "areaHa": 150,
+  "areaNote": "Whole site ~150 ha; OB occupation of similar or smaller size.",
+  "populationEstimate": {
+   "low": 8000,
+   "high": 25000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 1.514,
+   "heightKm": 1.262,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.757,
+     0.0
+    ],
+    [
+     0.731,
+     0.163
+    ],
+    [
+     0.656,
+     0.315
+    ],
+    [
+     0.535,
+     0.446
+    ],
+    [
+     0.379,
+     0.546
+    ],
+    [
+     0.196,
+     0.609
+    ],
+    [
+     0.0,
+     0.631
+    ],
+    [
+     -0.196,
+     0.609
+    ],
+    [
+     -0.378,
+     0.546
+    ],
+    [
+     -0.535,
+     0.446
+    ],
+    [
+     -0.656,
+     0.315
+    ],
+    [
+     -0.731,
+     0.163
+    ],
+    [
+     -0.757,
+     0.0
+    ],
+    [
+     -0.731,
+     -0.163
+    ],
+    [
+     -0.656,
+     -0.315
+    ],
+    [
+     -0.535,
+     -0.446
+    ],
+    [
+     -0.379,
+     -0.546
+    ],
+    [
+     -0.196,
+     -0.609
+    ],
+    [
+     -0.0,
+     -0.631
+    ],
+    [
+     0.196,
+     -0.609
+    ],
+    [
+     0.379,
+     -0.546
+    ],
+    [
+     0.535,
+     -0.446
+    ],
+    [
+     0.656,
+     -0.316
+    ],
+    [
+     0.731,
+     -0.163
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 2,
+  "founded": "Early Dynastic; capital of the Isin dynasty c. 2017-1794 BC.",
+  "description": "City of the healing goddess Gula. Its First Dynasty succeeded Ur III and dominated southern Babylonia for two centuries before losing ground to Larsa.",
+  "hammurabiEra": "Rim-Sin I of Larsa conquered Isin in 1794, two years before Hammurabi's accession. Hammurabi seized it briefly in 1787 (year 7 name) but it returned to Larsa until 1763.",
+  "sources": [
+   "Wikipedia (site article, coordinates)"
+  ]
+ },
+ {
+  "id": "larsa",
+  "name": "Larsa",
+  "akkadian": "Larsa (Sumerian UD.UNUG)",
+  "modernName": "Tell as-Senkereh, Iraq",
+  "lat": 31.285,
+  "lon": 45.854,
+  "areaHa": 200,
+  "areaNote": "Site ~2 x 1.5 km; OB capital estimated ~190-200 ha within its walls (Huot et al.).",
+  "populationEstimate": {
+   "low": 15000,
+   "high": 50000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 1.71,
+   "heightKm": 1.507,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.733,
+     0.647
+    ],
+    [
+     -0.081,
+     0.769
+    ],
+    [
+     0.611,
+     0.565
+    ],
+    [
+     0.855,
+     -0.005
+    ],
+    [
+     0.692,
+     -0.535
+    ],
+    [
+     0.081,
+     -0.738
+    ],
+    [
+     -0.57,
+     -0.616
+    ],
+    [
+     -0.855,
+     -0.087
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 1,
+  "founded": "Ubaid period; independent dynasty from c. 2025 BC.",
+  "description": "Capital of Rim-Sin I, the longest-reigning Mesopotamian king (c. 1822-1763 BC), city of the sun god Utu/Shamash (Ebabbar). In 1792 it was the dominant power of the south, controlling Ur, Uruk, Isin and Nippur.",
+  "hammurabiEra": "After Rim-Sin failed to help against Elam, Hammurabi besieged Larsa for about six months and took it in 1763 (year 31 name). Rim-Sin was captured; Larsa became the seat of Babylon's southern administration (letters of Hammurabi to his governors Shamash-hazir and Sin-iddinam).",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Huot (ed.), Larsa excavations",
+   "Charpin, Hammurabi of Babylon (2012)"
+  ]
+ },
+ {
+  "id": "ur",
+  "name": "Ur",
+  "akkadian": "Urim",
+  "modernName": "Tell al-Muqayyar, Iraq",
+  "lat": 30.9625,
+  "lon": 46.103,
+  "areaHa": 60,
+  "areaNote": "The walled upper city is an oval ~1.0 x 0.7 km (~60 ha). Remote sensing suggests a lower town of 400+ ha in the 3rd millennium; how much of that was occupied in the OB period is unclear (total OB town perhaps 60-200 ha).",
+  "populationEstimate": {
+   "low": 10000,
+   "high": 35000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 0.954,
+   "heightKm": 0.848,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.43,
+     0.301
+    ],
+    [
+     0.361,
+     0.368
+    ],
+    [
+     0.268,
+     0.41
+    ],
+    [
+     0.156,
+     0.424
+    ],
+    [
+     0.034,
+     0.409
+    ],
+    [
+     -0.091,
+     0.367
+    ],
+    [
+     -0.209,
+     0.299
+    ],
+    [
+     -0.314,
+     0.211
+    ],
+    [
+     -0.396,
+     0.108
+    ],
+    [
+     -0.452,
+     -0.002
+    ],
+    [
+     -0.477,
+     -0.111
+    ],
+    [
+     -0.47,
+     -0.213
+    ],
+    [
+     -0.43,
+     -0.301
+    ],
+    [
+     -0.361,
+     -0.368
+    ],
+    [
+     -0.268,
+     -0.41
+    ],
+    [
+     -0.156,
+     -0.424
+    ],
+    [
+     -0.034,
+     -0.409
+    ],
+    [
+     0.091,
+     -0.367
+    ],
+    [
+     0.209,
+     -0.299
+    ],
+    [
+     0.314,
+     -0.211
+    ],
+    [
+     0.396,
+     -0.108
+    ],
+    [
+     0.452,
+     0.002
+    ],
+    [
+     0.477,
+     0.111
+    ],
+    [
+     0.47,
+     0.213
+    ]
+   ],
+   "shapeNote": "oval ~1.05 x 0.73 km, long axis NW-SE"
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 1,
+  "founded": "Ubaid period (c. 5000 BC); capital of the Ur III empire 2112-2004 BC.",
+  "description": "Moon-god Nanna's city with its great ziggurat, once a sea port for the Gulf trade with Dilmun and Magan. The excavated OB residential quarters (Woolley's 'AH' and 'EM' sites) are the best-known Mesopotamian neighbourhoods of the period.",
+  "hammurabiEra": "Under Larsa until 1763, then Babylonian. Trade with Dilmun (Bahrain) still passed through Ur. Its OB houses were abandoned after the revolt against Samsu-iluna (1739).",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Woolley & Mallowan, Ur Excavations VII",
+   "Collège de France lecture (Charpin), 'The town of Ur: environment and town planning'"
+  ]
+ },
+ {
+  "id": "uruk",
+  "name": "Uruk",
+  "akkadian": "Uruk (Sumerian Unug, biblical Erech)",
+  "modernName": "Warka, Iraq",
+  "lat": 31.324,
+  "lon": 45.637,
+  "areaHa": 550,
+  "areaNote": "The 9 km city wall attributed to Gilgamesh enclosed ~550 ha (Early Dynastic). The wall was restored by king Anam c. 1820 BC, so it still stood in Hammurabi's time, but the occupied area inside was smaller (perhaps 150-300 ha).",
+  "populationEstimate": {
+   "low": 15000,
+   "high": 40000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 2.599,
+   "heightKm": 2.816,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.037,
+     1.383
+    ],
+    [
+     0.57,
+     1.209
+    ],
+    [
+     1.133,
+     0.733
+    ],
+    [
+     1.306,
+     0.04
+    ],
+    [
+     1.219,
+     -0.653
+    ],
+    [
+     0.83,
+     -1.216
+    ],
+    [
+     0.223,
+     -1.433
+    ],
+    [
+     -0.47,
+     -1.303
+    ],
+    [
+     -0.99,
+     -0.913
+    ],
+    [
+     -1.293,
+     -0.307
+    ],
+    [
+     -1.249,
+     0.343
+    ],
+    [
+     -0.86,
+     0.906
+    ],
+    [
+     -0.383,
+     1.209
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 1,
+  "founded": "Ubaid period; the world's largest city in the late 4th millennium BC.",
+  "description": "City of Inanna (Eanna) and An, birthplace of writing and the setting of the Gilgamesh epic. Briefly independent again in the 19th century BC (Sin-kashid's dynasty).",
+  "hammurabiEra": "Conquered by Rim-Sin in 1802. Hammurabi's year 7 name claims Uruk (1787), but it remained Larsa's until 1763, then Babylonian.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Finkbeiner, Uruk survey (1991)",
+   "Nissen, The Early History of the Ancient Near East"
+  ]
+ },
+ {
+  "id": "eridu",
+  "name": "Eridu",
+  "akkadian": "Eridu (Sumerian Eridug)",
+  "modernName": "Abu Shahrain, Iraq",
+  "lat": 30.816,
+  "lon": 45.996,
+  "areaHa": 10,
+  "areaNote": "Peak of 20-40 ha in Ubaid/Early Dynastic times; by the OB period the site was largely a temple precinct with little or no town - ~10 ha shown.",
+  "populationEstimate": {
+   "low": 0,
+   "high": 1500
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.357,
+   "heightKm": 0.357,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.178,
+     0.0
+    ],
+    [
+     0.172,
+     0.046
+    ],
+    [
+     0.155,
+     0.089
+    ],
+    [
+     0.126,
+     0.126
+    ],
+    [
+     0.089,
+     0.155
+    ],
+    [
+     0.046,
+     0.172
+    ],
+    [
+     0.0,
+     0.178
+    ],
+    [
+     -0.046,
+     0.172
+    ],
+    [
+     -0.089,
+     0.155
+    ],
+    [
+     -0.126,
+     0.126
+    ],
+    [
+     -0.155,
+     0.089
+    ],
+    [
+     -0.172,
+     0.046
+    ],
+    [
+     -0.178,
+     0.0
+    ],
+    [
+     -0.172,
+     -0.046
+    ],
+    [
+     -0.155,
+     -0.089
+    ],
+    [
+     -0.126,
+     -0.126
+    ],
+    [
+     -0.089,
+     -0.155
+    ],
+    [
+     -0.046,
+     -0.172
+    ],
+    [
+     -0.0,
+     -0.178
+    ],
+    [
+     0.046,
+     -0.172
+    ],
+    [
+     0.089,
+     -0.155
+    ],
+    [
+     0.126,
+     -0.126
+    ],
+    [
+     0.155,
+     -0.089
+    ],
+    [
+     0.172,
+     -0.046
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "c. 5400 BC; regarded as the first city in Sumerian tradition.",
+  "description": "Sanctuary of Enki/Ea on the edge of a marshy depression SW of Ur. Mostly abandoned by 2000 BC, but its cult remained prestigious.",
+  "hammurabiEra": "Hammurabi's Code prologue names him 'restorer of Eridu' and the year-33 canal is said to bring water to Eridu - a claim on its ideological importance more than its size.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Safar, Mustafa & Lloyd, Eridu (1981)"
+  ]
+ },
+ {
+  "id": "girsu",
+  "name": "Girsu",
+  "akkadian": "Girsu",
+  "modernName": "Tello, Iraq",
+  "lat": 31.562,
+  "lon": 46.178,
+  "areaHa": 30,
+  "areaNote": "Site ~130 ha at its 3rd-millennium peak; OB occupation was much reduced (~20-50 ha assumed).",
+  "populationEstimate": {
+   "low": 2000,
+   "high": 8000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.731,
+   "heightKm": 0.522,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.365,
+     0.0
+    ],
+    [
+     0.353,
+     0.068
+    ],
+    [
+     0.317,
+     0.13
+    ],
+    [
+     0.258,
+     0.185
+    ],
+    [
+     0.183,
+     0.226
+    ],
+    [
+     0.095,
+     0.252
+    ],
+    [
+     0.0,
+     0.261
+    ],
+    [
+     -0.095,
+     0.252
+    ],
+    [
+     -0.183,
+     0.226
+    ],
+    [
+     -0.258,
+     0.185
+    ],
+    [
+     -0.317,
+     0.13
+    ],
+    [
+     -0.353,
+     0.068
+    ],
+    [
+     -0.365,
+     0.0
+    ],
+    [
+     -0.353,
+     -0.068
+    ],
+    [
+     -0.317,
+     -0.13
+    ],
+    [
+     -0.258,
+     -0.185
+    ],
+    [
+     -0.183,
+     -0.226
+    ],
+    [
+     -0.095,
+     -0.252
+    ],
+    [
+     -0.0,
+     -0.261
+    ],
+    [
+     0.095,
+     -0.252
+    ],
+    [
+     0.183,
+     -0.226
+    ],
+    [
+     0.258,
+     -0.185
+    ],
+    [
+     0.317,
+     -0.131
+    ],
+    [
+     0.353,
+     -0.068
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Ubaid; religious centre of the Lagash state (Gudea, c. 2100 BC).",
+  "description": "The site that yielded the Gudea statues and much of what is known of Sumerian Lagash. Lay on the Tigris-fed canal system of the Lagash state.",
+  "hammurabiEra": "A minor Larsa-controlled town; passed to Babylon in 1763.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "British Museum Girsu Project"
+  ]
+ },
+ {
+  "id": "lagash",
+  "name": "Lagash",
+  "akkadian": "Lagaš",
+  "modernName": "Tell al-Hiba, Iraq",
+  "lat": 31.411,
+  "lon": 46.407,
+  "areaHa": 20,
+  "areaNote": "400-600 ha in the Early Dynastic period; only modest isolated OB occupation found by survey (~10-30 ha assumed).",
+  "populationEstimate": {
+   "low": 500,
+   "high": 4000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.575,
+   "heightKm": 0.443,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.287,
+     0.0
+    ],
+    [
+     0.278,
+     0.057
+    ],
+    [
+     0.249,
+     0.111
+    ],
+    [
+     0.203,
+     0.157
+    ],
+    [
+     0.144,
+     0.192
+    ],
+    [
+     0.074,
+     0.214
+    ],
+    [
+     0.0,
+     0.222
+    ],
+    [
+     -0.074,
+     0.214
+    ],
+    [
+     -0.144,
+     0.192
+    ],
+    [
+     -0.203,
+     0.157
+    ],
+    [
+     -0.249,
+     0.111
+    ],
+    [
+     -0.278,
+     0.057
+    ],
+    [
+     -0.287,
+     0.0
+    ],
+    [
+     -0.278,
+     -0.057
+    ],
+    [
+     -0.249,
+     -0.111
+    ],
+    [
+     -0.203,
+     -0.157
+    ],
+    [
+     -0.144,
+     -0.192
+    ],
+    [
+     -0.074,
+     -0.214
+    ],
+    [
+     -0.0,
+     -0.222
+    ],
+    [
+     0.074,
+     -0.214
+    ],
+    [
+     0.144,
+     -0.192
+    ],
+    [
+     0.203,
+     -0.157
+    ],
+    [
+     0.249,
+     -0.111
+    ],
+    [
+     0.278,
+     -0.057
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Ubaid; capital of the Lagash state (Ur-Nanshe, Eannatum) c. 2500 BC.",
+  "description": "Capital of one of the largest Early Dynastic city-states, on the edge of the southern marshes. Mostly abandoned after Ur III.",
+  "hammurabiEra": "Small settlement within Larsa's (then Babylon's) territory; Code prologue still names Lagash and Girsu among cities honoured by Hammurabi.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Hansen; Carter, al-Hiba survey"
+  ]
+ },
+ {
+  "id": "umma",
+  "name": "Umma",
+  "akkadian": "Umma (Gišša)",
+  "modernName": "Tell Jokha, Iraq",
+  "lat": 31.667,
+  "lon": 45.888,
+  "areaHa": 60,
+  "areaNote": "Up to ~400 ha in the Early Dynastic; OB occupation present (houses, tablets) but extent unknown - ~40-100 ha assumed.",
+  "populationEstimate": {
+   "low": 3000,
+   "high": 12000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 1.034,
+   "heightKm": 0.739,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.517,
+     0.0
+    ],
+    [
+     0.499,
+     0.096
+    ],
+    [
+     0.448,
+     0.185
+    ],
+    [
+     0.366,
+     0.261
+    ],
+    [
+     0.259,
+     0.32
+    ],
+    [
+     0.134,
+     0.357
+    ],
+    [
+     0.0,
+     0.369
+    ],
+    [
+     -0.134,
+     0.357
+    ],
+    [
+     -0.258,
+     0.32
+    ],
+    [
+     -0.366,
+     0.261
+    ],
+    [
+     -0.448,
+     0.185
+    ],
+    [
+     -0.499,
+     0.096
+    ],
+    [
+     -0.517,
+     0.0
+    ],
+    [
+     -0.499,
+     -0.096
+    ],
+    [
+     -0.448,
+     -0.185
+    ],
+    [
+     -0.366,
+     -0.261
+    ],
+    [
+     -0.259,
+     -0.32
+    ],
+    [
+     -0.134,
+     -0.357
+    ],
+    [
+     -0.0,
+     -0.369
+    ],
+    [
+     0.134,
+     -0.357
+    ],
+    [
+     0.259,
+     -0.32
+    ],
+    [
+     0.366,
+     -0.261
+    ],
+    [
+     0.448,
+     -0.185
+    ],
+    [
+     0.499,
+     -0.096
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Early Dynastic; Lagash's great rival in the 25th c. BC.",
+  "description": "City of the god Shara on the Iturungal canal; famous for its border war with Lagash and for tens of thousands of Ur III tablets. Heavily looted after 2003.",
+  "hammurabiEra": "Within Larsa's kingdom; then Babylonian after 1763.",
+  "sources": [
+   "Wikipedia (site article, coordinates)"
+  ]
+ },
+ {
+  "id": "shuruppak",
+  "name": "Shuruppak",
+  "akkadian": "Šuruppak",
+  "modernName": "Tell Fara, Iraq",
+  "lat": 31.777,
+  "lon": 45.51,
+  "areaHa": 5,
+  "areaNote": "~100 ha at the end of Early Dynastic III; essentially abandoned c. 2000 BC. Shown only as a small remnant.",
+  "populationEstimate": {
+   "low": 0,
+   "high": 1000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.252,
+   "heightKm": 0.252,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.126,
+     0.0
+    ],
+    [
+     0.122,
+     0.033
+    ],
+    [
+     0.109,
+     0.063
+    ],
+    [
+     0.089,
+     0.089
+    ],
+    [
+     0.063,
+     0.109
+    ],
+    [
+     0.033,
+     0.122
+    ],
+    [
+     0.0,
+     0.126
+    ],
+    [
+     -0.033,
+     0.122
+    ],
+    [
+     -0.063,
+     0.109
+    ],
+    [
+     -0.089,
+     0.089
+    ],
+    [
+     -0.109,
+     0.063
+    ],
+    [
+     -0.122,
+     0.033
+    ],
+    [
+     -0.126,
+     0.0
+    ],
+    [
+     -0.122,
+     -0.033
+    ],
+    [
+     -0.109,
+     -0.063
+    ],
+    [
+     -0.089,
+     -0.089
+    ],
+    [
+     -0.063,
+     -0.109
+    ],
+    [
+     -0.033,
+     -0.122
+    ],
+    [
+     -0.0,
+     -0.126
+    ],
+    [
+     0.033,
+     -0.122
+    ],
+    [
+     0.063,
+     -0.109
+    ],
+    [
+     0.089,
+     -0.089
+    ],
+    [
+     0.109,
+     -0.063
+    ],
+    [
+     0.122,
+     -0.033
+    ]
+   ]
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Jemdet Nasr / Early Dynastic.",
+  "description": "Home of Ziusudra/Utnapishtim, the flood hero; its Early Dynastic tablets are among the oldest literary texts.",
+  "hammurabiEra": "A near-deserted ruin mound by Hammurabi's time - a reminder that many famous Sumerian cities had already faded.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Martin, Fara (1988)"
+  ]
+ },
+ {
+  "id": "adab",
+  "name": "Adab",
+  "akkadian": "Adab (UD.NUN)",
+  "modernName": "Bismaya, Iraq",
+  "lat": 31.947,
+  "lon": 45.626,
+  "areaHa": 100,
+  "areaNote": "~460 ha of mounds in Early Dynastic III; OB palace and tablets attest occupation, but the OB town was smaller (~50-150 ha assumed).",
+  "populationEstimate": {
+   "low": 5000,
+   "high": 15000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 1.336,
+   "heightKm": 0.986,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.649,
+     0.236
+    ],
+    [
+     0.586,
+     0.34
+    ],
+    [
+     0.484,
+     0.421
+    ],
+    [
+     0.348,
+     0.473
+    ],
+    [
+     0.188,
+     0.493
+    ],
+    [
+     0.016,
+     0.479
+    ],
+    [
+     -0.158,
+     0.433
+    ],
+    [
+     -0.32,
+     0.357
+    ],
+    [
+     -0.461,
+     0.257
+    ],
+    [
+     -0.571,
+     0.139
+    ],
+    [
+     -0.641,
+     0.012
+    ],
+    [
+     -0.668,
+     -0.116
+    ],
+    [
+     -0.649,
+     -0.236
+    ],
+    [
+     -0.586,
+     -0.34
+    ],
+    [
+     -0.484,
+     -0.421
+    ],
+    [
+     -0.348,
+     -0.473
+    ],
+    [
+     -0.188,
+     -0.493
+    ],
+    [
+     -0.016,
+     -0.479
+    ],
+    [
+     0.158,
+     -0.433
+    ],
+    [
+     0.32,
+     -0.357
+    ],
+    [
+     0.461,
+     -0.257
+    ],
+    [
+     0.571,
+     -0.139
+    ],
+    [
+     0.641,
+     -0.012
+    ],
+    [
+     0.668,
+     0.116
+    ]
+   ],
+   "shapeNote": "ellipse 1.382x0.921 km rotated -20 deg clockwise, given as polygon"
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Early Dynastic.",
+  "description": "City of the goddess Ninhursag on the Iturungal branch of the Euphrates.",
+  "hammurabiEra": "Under Larsa, then Babylon; mentioned in the Code of Hammurabi prologue. The OB comic tale 'Three Ox-Drivers from Adab' is set here.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Adab excavations (Univ. of Chicago / Bismaya Project)"
+  ]
+ },
+ {
+  "id": "mashkan_shapir",
+  "name": "Mashkan-shapir",
+  "akkadian": "Maškan-šāpir",
+  "modernName": "Tell Abu Duwari, Iraq",
+  "lat": 32.229,
+  "lon": 45.307,
+  "areaHa": 72,
+  "areaNote": "Surveyed and largely single-period OB site: ~56 ha of mound, ~72 ha inside the wall (Stone & Zimansky).",
+  "populationEstimate": {
+   "low": 5000,
+   "high": 15000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 1.082,
+   "heightKm": 0.894,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.508,
+     0.293
+    ],
+    [
+     0.44,
+     0.371
+    ],
+    [
+     0.342,
+     0.423
+    ],
+    [
+     0.221,
+     0.447
+    ],
+    [
+     0.085,
+     0.44
+    ],
+    [
+     -0.057,
+     0.403
+    ],
+    [
+     -0.195,
+     0.339
+    ],
+    [
+     -0.32,
+     0.251
+    ],
+    [
+     -0.423,
+     0.147
+    ],
+    [
+     -0.497,
+     0.032
+    ],
+    [
+     -0.538,
+     -0.085
+    ],
+    [
+     -0.541,
+     -0.196
+    ],
+    [
+     -0.508,
+     -0.293
+    ],
+    [
+     -0.44,
+     -0.371
+    ],
+    [
+     -0.342,
+     -0.423
+    ],
+    [
+     -0.221,
+     -0.447
+    ],
+    [
+     -0.085,
+     -0.44
+    ],
+    [
+     0.057,
+     -0.403
+    ],
+    [
+     0.195,
+     -0.339
+    ],
+    [
+     0.32,
+     -0.251
+    ],
+    [
+     0.423,
+     -0.147
+    ],
+    [
+     0.497,
+     -0.032
+    ],
+    [
+     0.538,
+     0.085
+    ],
+    [
+     0.541,
+     0.196
+    ]
+   ],
+   "shapeNote": "ellipse 1.173x0.782 km rotated -30 deg clockwise, given as polygon"
+  },
+  "polity": "larsa",
+  "polity1792": "larsa",
+  "polity1750": "babylon",
+  "tier": 2,
+  "founded": "Ur III / Isin-Larsa (c. 2000 BC).",
+  "description": "Larsa's northern capital and Tigris port, city of Nergal; the best-surveyed OB city, showing a gridded canal network, harbours and craft quarters.",
+  "hammurabiEra": "Surrendered to Hammurabi early in the Larsa campaign (1763); thereafter governed for Babylon. Abandoned soon after Samsu-iluna's reign.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Stone & Zimansky, The Anatomy of a Mesopotamian City (2004)"
+  ]
+ },
+ {
+  "id": "eshnunna",
+  "name": "Eshnunna",
+  "akkadian": "Ešnunna",
+  "modernName": "Tell Asmar, Diyala, Iraq",
+  "lat": 33.485,
+  "lon": 44.728,
+  "areaHa": 90,
+  "areaNote": "Site ~ 1 x 1 km; OB city estimated ~70-110 ha.",
+  "populationEstimate": {
+   "low": 8000,
+   "high": 25000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 1.123,
+   "heightKm": 1.021,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.561,
+     0.0
+    ],
+    [
+     0.542,
+     0.132
+    ],
+    [
+     0.486,
+     0.255
+    ],
+    [
+     0.397,
+     0.361
+    ],
+    [
+     0.281,
+     0.442
+    ],
+    [
+     0.145,
+     0.493
+    ],
+    [
+     0.0,
+     0.51
+    ],
+    [
+     -0.145,
+     0.493
+    ],
+    [
+     -0.281,
+     0.442
+    ],
+    [
+     -0.397,
+     0.361
+    ],
+    [
+     -0.486,
+     0.255
+    ],
+    [
+     -0.542,
+     0.132
+    ],
+    [
+     -0.561,
+     0.0
+    ],
+    [
+     -0.542,
+     -0.132
+    ],
+    [
+     -0.486,
+     -0.255
+    ],
+    [
+     -0.397,
+     -0.361
+    ],
+    [
+     -0.281,
+     -0.442
+    ],
+    [
+     -0.145,
+     -0.493
+    ],
+    [
+     -0.0,
+     -0.51
+    ],
+    [
+     0.145,
+     -0.493
+    ],
+    [
+     0.281,
+     -0.442
+    ],
+    [
+     0.397,
+     -0.361
+    ],
+    [
+     0.486,
+     -0.255
+    ],
+    [
+     0.542,
+     -0.132
+    ]
+   ]
+  },
+  "polity": "eshnunna",
+  "polity1792": "eshnunna",
+  "polity1750": "babylon",
+  "tier": 1,
+  "founded": "Early Dynastic (Square Temple of Abu); independent after Ur III.",
+  "description": "Capital of the Diyala kingdom controlling the route to Elam and the Zagros, and author of the Laws of Eshnunna (c. 1800 BC), a forerunner of Hammurabi's Code.",
+  "hammurabiEra": "Ibal-pi-El II was a major power until the Elamites took the city (c. 1766). Hammurabi defeated Eshnunna in 1762 (year 32 name) and, by his own claim, ruined it with a flood c. 1756 (year 38).",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Frankfort, Oriental Institute Diyala excavations",
+   "Charpin, Hammurabi of Babylon (2012)"
+  ]
+ },
+ {
+  "id": "tutub",
+  "name": "Tutub",
+  "akkadian": "Tutub",
+  "modernName": "Khafajah, Diyala, Iraq",
+  "lat": 33.355,
+  "lon": 44.556,
+  "areaHa": 40,
+  "areaNote": "Four mounds (A-D); combined area ~30-50 ha assumed.",
+  "populationEstimate": {
+   "low": 2000,
+   "high": 8000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.814,
+   "heightKm": 0.626,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.407,
+     0.0
+    ],
+    [
+     0.393,
+     0.081
+    ],
+    [
+     0.352,
+     0.156
+    ],
+    [
+     0.288,
+     0.221
+    ],
+    [
+     0.204,
+     0.271
+    ],
+    [
+     0.105,
+     0.302
+    ],
+    [
+     0.0,
+     0.313
+    ],
+    [
+     -0.105,
+     0.302
+    ],
+    [
+     -0.203,
+     0.271
+    ],
+    [
+     -0.288,
+     0.221
+    ],
+    [
+     -0.352,
+     0.156
+    ],
+    [
+     -0.393,
+     0.081
+    ],
+    [
+     -0.407,
+     0.0
+    ],
+    [
+     -0.393,
+     -0.081
+    ],
+    [
+     -0.352,
+     -0.156
+    ],
+    [
+     -0.288,
+     -0.221
+    ],
+    [
+     -0.204,
+     -0.271
+    ],
+    [
+     -0.105,
+     -0.302
+    ],
+    [
+     -0.0,
+     -0.313
+    ],
+    [
+     0.105,
+     -0.302
+    ],
+    [
+     0.204,
+     -0.271
+    ],
+    [
+     0.288,
+     -0.221
+    ],
+    [
+     0.352,
+     -0.157
+    ],
+    [
+     0.393,
+     -0.081
+    ]
+   ]
+  },
+  "polity": "eshnunna",
+  "polity1792": "eshnunna",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Early Dynastic (Temple Oval).",
+  "description": "Diyala town on the lower river near its Tigris confluence, known for the Early Dynastic Temple Oval of Sin.",
+  "hammurabiEra": "Part of Eshnunna's kingdom until 1762; later Samsu-iluna built the fortress Dur-Samsuiluna on Mound B.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Delougaz, The Temple Oval at Khafajah (1940)"
+  ]
+ },
+ {
+  "id": "malgium",
+  "name": "Malgium (approx.)",
+  "akkadian": "Malgium",
+  "modernName": "Tell Yassir? Wasit, Iraq (location uncertain)",
+  "lat": 32.561,
+  "lon": 45.1,
+  "areaHa": null,
+  "areaNote": "LOCATION APPROXIMATE: tentatively Tell Yassir, ~20 km NW of Mashkan-shapir on the Tigris; other proposals include Tulul al-Fāj. Size unknown.",
+  "populationEstimate": null,
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.714,
+   "heightKm": 0.714,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.357,
+     0.0
+    ],
+    [
+     0.345,
+     0.092
+    ],
+    [
+     0.309,
+     0.178
+    ],
+    [
+     0.252,
+     0.252
+    ],
+    [
+     0.179,
+     0.309
+    ],
+    [
+     0.092,
+     0.345
+    ],
+    [
+     0.0,
+     0.357
+    ],
+    [
+     -0.092,
+     0.345
+    ],
+    [
+     -0.178,
+     0.309
+    ],
+    [
+     -0.252,
+     0.252
+    ],
+    [
+     -0.309,
+     0.178
+    ],
+    [
+     -0.345,
+     0.092
+    ],
+    [
+     -0.357,
+     0.0
+    ],
+    [
+     -0.345,
+     -0.092
+    ],
+    [
+     -0.309,
+     -0.178
+    ],
+    [
+     -0.252,
+     -0.252
+    ],
+    [
+     -0.179,
+     -0.309
+    ],
+    [
+     -0.092,
+     -0.345
+    ],
+    [
+     -0.0,
+     -0.357
+    ],
+    [
+     0.092,
+     -0.345
+    ],
+    [
+     0.179,
+     -0.309
+    ],
+    [
+     0.252,
+     -0.252
+    ],
+    [
+     0.309,
+     -0.179
+    ],
+    [
+     0.345,
+     -0.092
+    ]
+   ]
+  },
+  "polity": "malgium",
+  "polity1792": "malgium",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Unknown; independent kingdom in the early 2nd millennium BC.",
+  "description": "Small Tigris kingdom between Eshnunna and Larsa, ruled by kings such as Ipiq-Ishtar and Takil-ilissu.",
+  "hammurabiEra": "Paid 15 talents of silver to Hammurabi and his allies in 1784 (year 10 name). Later an ally against Larsa, then defeated with Mari (1761) and its walls destroyed (1759); population deported to Kish, Isin and Pi-Kasi.",
+  "sources": [
+   "Wikipedia, 'Malgium'",
+   "Kutscher, Malgium (RlA)"
+  ]
+ },
+ {
+  "id": "der",
+  "name": "Der",
+  "akkadian": "Dēr",
+  "modernName": "Tell Aqar near Badra, Wasit, Iraq",
+  "lat": 33.124,
+  "lon": 45.931,
+  "areaHa": null,
+  "areaNote": "Large, poorly explored site; OB extent unknown.",
+  "populationEstimate": {
+   "low": 3000,
+   "high": 15000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.957,
+   "heightKm": 0.798,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.478,
+     0.0
+    ],
+    [
+     0.462,
+     0.103
+    ],
+    [
+     0.414,
+     0.199
+    ],
+    [
+     0.338,
+     0.282
+    ],
+    [
+     0.239,
+     0.346
+    ],
+    [
+     0.124,
+     0.385
+    ],
+    [
+     0.0,
+     0.399
+    ],
+    [
+     -0.124,
+     0.385
+    ],
+    [
+     -0.239,
+     0.346
+    ],
+    [
+     -0.338,
+     0.282
+    ],
+    [
+     -0.414,
+     0.199
+    ],
+    [
+     -0.462,
+     0.103
+    ],
+    [
+     -0.478,
+     0.0
+    ],
+    [
+     -0.462,
+     -0.103
+    ],
+    [
+     -0.414,
+     -0.199
+    ],
+    [
+     -0.338,
+     -0.282
+    ],
+    [
+     -0.239,
+     -0.346
+    ],
+    [
+     -0.124,
+     -0.385
+    ],
+    [
+     -0.0,
+     -0.399
+    ],
+    [
+     0.124,
+     -0.385
+    ],
+    [
+     0.239,
+     -0.346
+    ],
+    [
+     0.338,
+     -0.282
+    ],
+    [
+     0.414,
+     -0.2
+    ],
+    [
+     0.462,
+     -0.103
+    ]
+   ]
+  },
+  "polity": "der",
+  "polity1792": "der",
+  "polity1750": "other",
+  "tier": 3,
+  "founded": "3rd millennium BC.",
+  "description": "Gate-city on the route from Babylonia into Elam at the foot of the Zagros, cult centre of the god Ishtaran.",
+  "hammurabiEra": "Ruled by local kings (e.g. Yasub-Yahad, scolded by Yarim-Lim of Yamhad in a letter found at Mari). Its status under Hammurabi is unclear; probably in Babylon's orbit after 1762.",
+  "sources": [
+   "Wikipedia, 'Der (Sumer)'"
+  ]
+ },
+ {
+  "id": "rapiqum",
+  "name": "Rapiqum (approx.)",
+  "akkadian": "Rapiqum",
+  "modernName": "Tell Anbar near Fallujah? Iraq (location uncertain)",
+  "lat": 33.372,
+  "lon": 43.716,
+  "areaHa": null,
+  "areaNote": "LOCATION APPROXIMATE: on the Euphrates upstream of Sippar; Ramadi, Fallujah, Hit and recently Tell Anbar have been proposed. Size unknown.",
+  "populationEstimate": null,
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.618,
+   "heightKm": 0.618,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.309,
+     0.0
+    ],
+    [
+     0.298,
+     0.08
+    ],
+    [
+     0.268,
+     0.154
+    ],
+    [
+     0.218,
+     0.218
+    ],
+    [
+     0.155,
+     0.268
+    ],
+    [
+     0.08,
+     0.298
+    ],
+    [
+     0.0,
+     0.309
+    ],
+    [
+     -0.08,
+     0.298
+    ],
+    [
+     -0.154,
+     0.268
+    ],
+    [
+     -0.218,
+     0.218
+    ],
+    [
+     -0.268,
+     0.154
+    ],
+    [
+     -0.298,
+     0.08
+    ],
+    [
+     -0.309,
+     0.0
+    ],
+    [
+     -0.298,
+     -0.08
+    ],
+    [
+     -0.268,
+     -0.154
+    ],
+    [
+     -0.218,
+     -0.218
+    ],
+    [
+     -0.155,
+     -0.268
+    ],
+    [
+     -0.08,
+     -0.298
+    ],
+    [
+     -0.0,
+     -0.309
+    ],
+    [
+     0.08,
+     -0.298
+    ],
+    [
+     0.155,
+     -0.268
+    ],
+    [
+     0.218,
+     -0.218
+    ],
+    [
+     0.268,
+     -0.155
+    ],
+    [
+     0.298,
+     -0.08
+    ]
+   ]
+  },
+  "polity": "babylon",
+  "polity1792": "eshnunna",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "Unknown.",
+  "description": "Fortress town controlling the Euphrates route between Babylonia and Mari/Suhum.",
+  "hammurabiEra": "Shamshi-Adad took it from Eshnunna and handed it to Hammurabi; Hammurabi's year 11 name (c. 1783) records seizing Rapiqum and Shalibi. He rebuilt its wall in year 42.",
+  "sources": [
+   "Wikipedia, 'Rapiqum'"
+  ]
+ },
+ {
+  "id": "mari",
+  "name": "Mari",
+  "akkadian": "Mari",
+  "modernName": "Tell Hariri, Deir ez-Zor, Syria",
+  "lat": 34.55,
+  "lon": 40.889,
+  "areaHa": 280,
+  "areaNote": "Circular city ~1.9 km in diameter (outer dike) = ~280 ha, planned in the early 3rd millennium; inner rampart ~1.3 km (~130 ha). About a third is eroded by the Euphrates. OB occupation filled much of the inner circle.",
+  "populationEstimate": {
+   "low": 10000,
+   "high": 40000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 1.9,
+   "heightKm": 1.9,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.95,
+     0.0
+    ],
+    [
+     0.918,
+     0.246
+    ],
+    [
+     0.823,
+     0.475
+    ],
+    [
+     0.672,
+     0.672
+    ],
+    [
+     0.475,
+     0.823
+    ],
+    [
+     0.246,
+     0.918
+    ],
+    [
+     0.0,
+     0.95
+    ],
+    [
+     -0.246,
+     0.918
+    ],
+    [
+     -0.475,
+     0.823
+    ],
+    [
+     -0.672,
+     0.672
+    ],
+    [
+     -0.823,
+     0.475
+    ],
+    [
+     -0.918,
+     0.246
+    ],
+    [
+     -0.95,
+     0.0
+    ],
+    [
+     -0.918,
+     -0.246
+    ],
+    [
+     -0.823,
+     -0.475
+    ],
+    [
+     -0.672,
+     -0.672
+    ],
+    [
+     -0.475,
+     -0.823
+    ],
+    [
+     -0.246,
+     -0.918
+    ],
+    [
+     -0.0,
+     -0.95
+    ],
+    [
+     0.246,
+     -0.918
+    ],
+    [
+     0.475,
+     -0.823
+    ],
+    [
+     0.672,
+     -0.672
+    ],
+    [
+     0.823,
+     -0.475
+    ],
+    [
+     0.918,
+     -0.246
+    ]
+   ]
+  },
+  "polity": "mari",
+  "polity1792": "upper_mesopotamia",
+  "polity1750": "babylon",
+  "tier": 1,
+  "founded": "c. 2900 BC as a planned round city.",
+  "description": "Capital on the middle Euphrates controlling the river trade between Babylonia and Syria. The Royal Palace of Zimri-Lim (~2.5 ha, 260+ rooms) yielded ~20,000 tablets - the 'Mari letters' that give an almost daily picture of Hammurabi's world.",
+  "hammurabiEra": "Ruled by Yasmah-Addu, son of Shamshi-Adad, until c. 1776; Zimri-Lim retook the throne in 1775 and allied with Hammurabi against Elam. Hammurabi turned on him, took Mari in 1761 (year 33) and destroyed its walls and palace in 1759 (year 35); the archive survived because the palace was burnt.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Margueron, Mari: métropole de l'Euphrate (2004)",
+   "Archives Royales de Mari (ARM)",
+   "Charpin & Ziegler, Mari et le Proche-Orient (2003)"
+  ]
+ },
+ {
+  "id": "terqa",
+  "name": "Terqa",
+  "akkadian": "Terqa",
+  "modernName": "Tell Ashara, Syria",
+  "lat": 34.923,
+  "lon": 40.569,
+  "areaHa": 24,
+  "areaNote": "Triple walls enclosed ~24 ha; much lies under the modern town and about half has been eroded by the river.",
+  "populationEstimate": {
+   "low": 2000,
+   "high": 6000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.553,
+   "heightKm": 0.553,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.277,
+     0.0
+    ],
+    [
+     0.267,
+     0.072
+    ],
+    [
+     0.239,
+     0.138
+    ],
+    [
+     0.196,
+     0.196
+    ],
+    [
+     0.138,
+     0.239
+    ],
+    [
+     0.072,
+     0.267
+    ],
+    [
+     0.0,
+     0.277
+    ],
+    [
+     -0.072,
+     0.267
+    ],
+    [
+     -0.138,
+     0.239
+    ],
+    [
+     -0.196,
+     0.196
+    ],
+    [
+     -0.239,
+     0.138
+    ],
+    [
+     -0.267,
+     0.072
+    ],
+    [
+     -0.277,
+     0.0
+    ],
+    [
+     -0.267,
+     -0.072
+    ],
+    [
+     -0.239,
+     -0.138
+    ],
+    [
+     -0.196,
+     -0.196
+    ],
+    [
+     -0.138,
+     -0.239
+    ],
+    [
+     -0.072,
+     -0.267
+    ],
+    [
+     -0.0,
+     -0.277
+    ],
+    [
+     0.072,
+     -0.267
+    ],
+    [
+     0.138,
+     -0.239
+    ],
+    [
+     0.196,
+     -0.196
+    ],
+    [
+     0.239,
+     -0.138
+    ],
+    [
+     0.267,
+     -0.072
+    ]
+   ]
+  },
+  "polity": "mari",
+  "polity1792": "upper_mesopotamia",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "3rd millennium BC.",
+  "description": "Cult city of Dagan, upstream of Mari. After Mari's destruction it became capital of the kingdom of Hana.",
+  "hammurabiEra": "Governed for Zimri-Lim by Kibri-Dagan, whose letters report prophecies of Dagan. Became the regional centre after Mari fell (1761-1759).",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Buccellati & Kelly-Buccellati, Terqa"
+  ]
+ },
+ {
+  "id": "tuttul",
+  "name": "Tuttul",
+  "akkadian": "Tuttul",
+  "modernName": "Tell Bi'a near Raqqa, Syria",
+  "lat": 35.958,
+  "lon": 39.05,
+  "areaHa": 40,
+  "areaNote": "Tell Bi'a at the Balikh-Euphrates confluence; OB extent ~30-50 ha assumed.",
+  "populationEstimate": {
+   "low": 3000,
+   "high": 10000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.814,
+   "heightKm": 0.626,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.407,
+     0.0
+    ],
+    [
+     0.393,
+     0.081
+    ],
+    [
+     0.352,
+     0.156
+    ],
+    [
+     0.288,
+     0.221
+    ],
+    [
+     0.204,
+     0.271
+    ],
+    [
+     0.105,
+     0.302
+    ],
+    [
+     0.0,
+     0.313
+    ],
+    [
+     -0.105,
+     0.302
+    ],
+    [
+     -0.203,
+     0.271
+    ],
+    [
+     -0.288,
+     0.221
+    ],
+    [
+     -0.352,
+     0.156
+    ],
+    [
+     -0.393,
+     0.081
+    ],
+    [
+     -0.407,
+     0.0
+    ],
+    [
+     -0.393,
+     -0.081
+    ],
+    [
+     -0.352,
+     -0.156
+    ],
+    [
+     -0.288,
+     -0.221
+    ],
+    [
+     -0.204,
+     -0.271
+    ],
+    [
+     -0.105,
+     -0.302
+    ],
+    [
+     -0.0,
+     -0.313
+    ],
+    [
+     0.105,
+     -0.302
+    ],
+    [
+     0.204,
+     -0.271
+    ],
+    [
+     0.288,
+     -0.221
+    ],
+    [
+     0.352,
+     -0.157
+    ],
+    [
+     0.393,
+     -0.081
+    ]
+   ]
+  },
+  "polity": "mari",
+  "polity1792": "upper_mesopotamia",
+  "polity1750": "other",
+  "tier": 3,
+  "founded": "3rd millennium BC.",
+  "description": "Cult city of Dagan at the mouth of the Balikh, a meeting point of Amorite tribes.",
+  "hammurabiEra": "Under Shamshi-Adad, then Zimri-Lim; status after Mari's fall uncertain.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Strommenger & Kohlmeyer, Tall Bi'a/Tuttul"
+  ]
+ },
+ {
+  "id": "assur",
+  "name": "Assur",
+  "akkadian": "Aššur",
+  "modernName": "Qal'at Sherqat, Iraq",
+  "lat": 35.457,
+  "lon": 43.263,
+  "areaHa": 50,
+  "areaNote": "Old city on a triangular bluff over the Tigris ~65 ha (later New Town added, total ~120 ha in Neo-Assyrian times). OB city estimated ~40-60 ha.",
+  "populationEstimate": {
+   "low": 5000,
+   "high": 15000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 0.749,
+   "heightKm": 0.875,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.339,
+     0.317
+    ],
+    [
+     0.067,
+     0.442
+    ],
+    [
+     0.379,
+     0.254
+    ],
+    [
+     0.348,
+     -0.152
+    ],
+    [
+     0.129,
+     -0.433
+    ],
+    [
+     -0.214,
+     -0.37
+    ],
+    [
+     -0.37,
+     -0.058
+    ]
+   ]
+  },
+  "polity": "upper_mesopotamia",
+  "polity1792": "upper_mesopotamia",
+  "polity1750": "upper_mesopotamia",
+  "tier": 2,
+  "founded": "Early Dynastic (Ishtar temples).",
+  "description": "City of the god Ashur and hub of the Old Assyrian trade network with Kanesh in Anatolia.",
+  "hammurabiEra": "Part of Shamshi-Adad's Kingdom of Upper Mesopotamia, then held by Ishme-Dagan. Hammurabi's Code prologue claims he restored Ashur's protective spirit to the city, implying influence after 1757.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Larsen, Ancient Kanesh (2015)"
+  ]
+ },
+ {
+  "id": "ekallatum",
+  "name": "Ekallatum (approx.)",
+  "akkadian": "Ekallātum",
+  "modernName": "Tell Haikal? east bank of the Tigris, Iraq (location uncertain)",
+  "lat": 35.597,
+  "lon": 43.273,
+  "areaHa": null,
+  "areaNote": "LOCATION APPROXIMATE: most often identified with Tell Haikal ~15 km N of Assur; Tell Akra and Tell Huwaish have also been proposed. Size unknown.",
+  "populationEstimate": null,
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.618,
+   "heightKm": 0.618,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.309,
+     0.0
+    ],
+    [
+     0.298,
+     0.08
+    ],
+    [
+     0.268,
+     0.154
+    ],
+    [
+     0.218,
+     0.218
+    ],
+    [
+     0.155,
+     0.268
+    ],
+    [
+     0.08,
+     0.298
+    ],
+    [
+     0.0,
+     0.309
+    ],
+    [
+     -0.08,
+     0.298
+    ],
+    [
+     -0.154,
+     0.268
+    ],
+    [
+     -0.218,
+     0.218
+    ],
+    [
+     -0.268,
+     0.154
+    ],
+    [
+     -0.298,
+     0.08
+    ],
+    [
+     -0.309,
+     0.0
+    ],
+    [
+     -0.298,
+     -0.08
+    ],
+    [
+     -0.268,
+     -0.154
+    ],
+    [
+     -0.218,
+     -0.218
+    ],
+    [
+     -0.155,
+     -0.268
+    ],
+    [
+     -0.08,
+     -0.298
+    ],
+    [
+     -0.0,
+     -0.309
+    ],
+    [
+     0.08,
+     -0.298
+    ],
+    [
+     0.155,
+     -0.268
+    ],
+    [
+     0.218,
+     -0.218
+    ],
+    [
+     0.268,
+     -0.155
+    ],
+    [
+     0.298,
+     -0.08
+    ]
+   ]
+  },
+  "polity": "upper_mesopotamia",
+  "polity1792": "upper_mesopotamia",
+  "polity1750": "upper_mesopotamia",
+  "tier": 2,
+  "founded": "Unknown.",
+  "description": "Shamshi-Adad's original base, later the seat of his eldest son Ishme-Dagan.",
+  "hammurabiEra": "Ishme-Dagan ruled from here after Shamshi-Adad's death (c. 1776), lost ground, took refuge in Babylon, and was restored with Babylonian help.",
+  "sources": [
+   "Wikipedia, 'Ekallatum'",
+   "Ziegler, Le royaume d'Ekallâtum"
+  ]
+ },
+ {
+  "id": "shubat_enlil",
+  "name": "Shubat-Enlil",
+  "akkadian": "Šubat-Enlil (earlier Šehna)",
+  "modernName": "Tell Leilan, Hasakah, Syria",
+  "lat": 36.957,
+  "lon": 41.505,
+  "areaHa": 90,
+  "areaNote": "Acropolis ~15 ha plus walled lower town = ~90 ha (Weiss).",
+  "populationEstimate": {
+   "low": 10000,
+   "high": 20000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 1.07,
+   "heightKm": 1.07,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.535,
+     0.0
+    ],
+    [
+     0.517,
+     0.138
+    ],
+    [
+     0.463,
+     0.267
+    ],
+    [
+     0.378,
+     0.378
+    ],
+    [
+     0.268,
+     0.463
+    ],
+    [
+     0.138,
+     0.517
+    ],
+    [
+     0.0,
+     0.535
+    ],
+    [
+     -0.138,
+     0.517
+    ],
+    [
+     -0.267,
+     0.463
+    ],
+    [
+     -0.378,
+     0.378
+    ],
+    [
+     -0.463,
+     0.267
+    ],
+    [
+     -0.517,
+     0.138
+    ],
+    [
+     -0.535,
+     0.0
+    ],
+    [
+     -0.517,
+     -0.138
+    ],
+    [
+     -0.463,
+     -0.267
+    ],
+    [
+     -0.378,
+     -0.378
+    ],
+    [
+     -0.268,
+     -0.463
+    ],
+    [
+     -0.138,
+     -0.517
+    ],
+    [
+     -0.0,
+     -0.535
+    ],
+    [
+     0.138,
+     -0.517
+    ],
+    [
+     0.268,
+     -0.463
+    ],
+    [
+     0.378,
+     -0.378
+    ],
+    [
+     0.463,
+     -0.268
+    ],
+    [
+     0.517,
+     -0.138
+    ]
+   ]
+  },
+  "polity": "apum",
+  "polity1792": "upper_mesopotamia",
+  "polity1750": "apum",
+  "tier": 2,
+  "founded": "5th millennium BC; refounded as capital c. 1800 BC.",
+  "description": "Shamshi-Adad's capital in the Khabur plain, 'Dwelling of Enlil', with palaces and a temple acropolis.",
+  "hammurabiEra": "Capital of Upper Mesopotamia until Shamshi-Adad's death (c. 1776), then of the kingdom of Apum; occupied by the Elamites c. 1765; eventually sacked by Samsu-iluna in 1728.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Weiss, Tell Leilan excavations (Yale)"
+  ]
+ },
+ {
+  "id": "karana",
+  "name": "Karana",
+  "akkadian": "Karana / Qaṭṭara",
+  "modernName": "Tell al-Rimah, Iraq",
+  "lat": 36.257,
+  "lon": 42.449,
+  "areaHa": 40,
+  "areaNote": "Central tell inside a roughly circular walled lower town ~ 0.7 km across; ~30-50 ha.",
+  "populationEstimate": {
+   "low": 3000,
+   "high": 8000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.714,
+   "heightKm": 0.714,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.357,
+     0.0
+    ],
+    [
+     0.345,
+     0.092
+    ],
+    [
+     0.309,
+     0.178
+    ],
+    [
+     0.252,
+     0.252
+    ],
+    [
+     0.179,
+     0.309
+    ],
+    [
+     0.092,
+     0.345
+    ],
+    [
+     0.0,
+     0.357
+    ],
+    [
+     -0.092,
+     0.345
+    ],
+    [
+     -0.178,
+     0.309
+    ],
+    [
+     -0.252,
+     0.252
+    ],
+    [
+     -0.309,
+     0.178
+    ],
+    [
+     -0.345,
+     0.092
+    ],
+    [
+     -0.357,
+     0.0
+    ],
+    [
+     -0.345,
+     -0.092
+    ],
+    [
+     -0.309,
+     -0.178
+    ],
+    [
+     -0.252,
+     -0.252
+    ],
+    [
+     -0.179,
+     -0.309
+    ],
+    [
+     -0.092,
+     -0.345
+    ],
+    [
+     -0.0,
+     -0.357
+    ],
+    [
+     0.092,
+     -0.345
+    ],
+    [
+     0.179,
+     -0.309
+    ],
+    [
+     0.252,
+     -0.252
+    ],
+    [
+     0.309,
+     -0.179
+    ],
+    [
+     0.345,
+     -0.092
+    ]
+   ]
+  },
+  "polity": "other",
+  "polity1792": "upper_mesopotamia",
+  "polity1750": "babylon",
+  "tier": 3,
+  "founded": "3rd millennium BC.",
+  "description": "Small kingdom west of Nineveh; the archive of queen Iltani dates from the OB period.",
+  "hammurabiEra": "Ruled by Ashkur-Addu and later Aqba-hammu, a vassal of Hammurabi after c. 1761. Karana's region (with Andarig and Kurda) was a battleground between Eshnunna, Elam and Babylon.",
+  "sources": [
+   "Wikipedia, 'Tell al-Rimah'",
+   "Dalley, Walker & Hawkins, The Old Babylonian Tablets from Tell al Rimah"
+  ]
+ },
+ {
+  "id": "nineveh",
+  "name": "Nineveh",
+  "akkadian": "Ninua",
+  "modernName": "Kuyunjik, Mosul, Iraq",
+  "lat": 36.359,
+  "lon": 43.153,
+  "areaHa": 40,
+  "areaNote": "The OB city probably occupied the Kuyunjik mound (~40 ha). The famous ~750 ha walled city is Sennacherib's (c. 700 BC).",
+  "populationEstimate": {
+   "low": 3000,
+   "high": 10000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 0.82,
+   "heightKm": 0.636,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.397,
+     0.144
+    ],
+    [
+     0.356,
+     0.213
+    ],
+    [
+     0.292,
+     0.267
+    ],
+    [
+     0.207,
+     0.302
+    ],
+    [
+     0.109,
+     0.318
+    ],
+    [
+     0.003,
+     0.311
+    ],
+    [
+     -0.103,
+     0.283
+    ],
+    [
+     -0.202,
+     0.236
+    ],
+    [
+     -0.288,
+     0.173
+    ],
+    [
+     -0.353,
+     0.098
+    ],
+    [
+     -0.395,
+     0.017
+    ],
+    [
+     -0.41,
+     -0.066
+    ],
+    [
+     -0.397,
+     -0.144
+    ],
+    [
+     -0.356,
+     -0.213
+    ],
+    [
+     -0.292,
+     -0.267
+    ],
+    [
+     -0.207,
+     -0.302
+    ],
+    [
+     -0.109,
+     -0.318
+    ],
+    [
+     -0.003,
+     -0.311
+    ],
+    [
+     0.103,
+     -0.283
+    ],
+    [
+     0.202,
+     -0.236
+    ],
+    [
+     0.288,
+     -0.173
+    ],
+    [
+     0.353,
+     -0.098
+    ],
+    [
+     0.395,
+     -0.017
+    ],
+    [
+     0.41,
+     0.066
+    ]
+   ],
+   "shapeNote": "ellipse 0.844x0.603 km rotated -20 deg clockwise, given as polygon"
+  },
+  "polity": "other",
+  "polity1792": "upper_mesopotamia",
+  "polity1750": "upper_mesopotamia",
+  "tier": 2,
+  "founded": "Hassuna/Halaf periods (6th millennium BC).",
+  "description": "City of Ishtar on the Tigris opposite modern Mosul; Shamshi-Adad rebuilt its Ishtar temple.",
+  "hammurabiEra": "Under Shamshi-Adad; afterwards contested. The Code prologue mentions Ishtar of Nineveh, suggesting Babylonian claims by c. 1755.",
+  "sources": [
+   "Wikipedia (site article, coordinates)"
+  ]
+ },
+ {
+  "id": "arbela",
+  "name": "Arbela",
+  "akkadian": "Urbilum / Arbail",
+  "modernName": "Erbil citadel, Kurdistan, Iraq",
+  "lat": 36.191,
+  "lon": 44.009,
+  "areaHa": 11,
+  "areaNote": "Only the citadel mound (~430 x 340 m, ~11 ha) is measurable; the OB lower town is unknown. One of the oldest continuously inhabited sites.",
+  "populationEstimate": {
+   "low": 2000,
+   "high": 8000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.43,
+   "heightKm": 0.34,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.215,
+     0.0
+    ],
+    [
+     0.208,
+     0.044
+    ],
+    [
+     0.186,
+     0.085
+    ],
+    [
+     0.152,
+     0.12
+    ],
+    [
+     0.108,
+     0.147
+    ],
+    [
+     0.056,
+     0.164
+    ],
+    [
+     0.0,
+     0.17
+    ],
+    [
+     -0.056,
+     0.164
+    ],
+    [
+     -0.107,
+     0.147
+    ],
+    [
+     -0.152,
+     0.12
+    ],
+    [
+     -0.186,
+     0.085
+    ],
+    [
+     -0.208,
+     0.044
+    ],
+    [
+     -0.215,
+     0.0
+    ],
+    [
+     -0.208,
+     -0.044
+    ],
+    [
+     -0.186,
+     -0.085
+    ],
+    [
+     -0.152,
+     -0.12
+    ],
+    [
+     -0.108,
+     -0.147
+    ],
+    [
+     -0.056,
+     -0.164
+    ],
+    [
+     -0.0,
+     -0.17
+    ],
+    [
+     0.056,
+     -0.164
+    ],
+    [
+     0.108,
+     -0.147
+    ],
+    [
+     0.152,
+     -0.12
+    ],
+    [
+     0.186,
+     -0.085
+    ],
+    [
+     0.208,
+     -0.044
+    ]
+   ]
+  },
+  "polity": "zagros",
+  "polity1792": "zagros",
+  "polity1750": "zagros",
+  "tier": 3,
+  "founded": "At least 5th millennium BC.",
+  "description": "City of Ishtar of Arbela on the plain between the two Zab rivers.",
+  "hammurabiEra": "Conquered by Shamshi-Adad around 1780 during his Qabra campaign (Shemshara letters); afterwards in the Hurrian-Turukkean borderlands.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Eidem & Laessøe, The Shemshara Archives (2001)"
+  ]
+ },
+ {
+  "id": "shusharra",
+  "name": "Shusharra",
+  "akkadian": "Šušarrā",
+  "modernName": "Tell Shemshara, Rania plain (now Lake Dukan), Iraq",
+  "lat": 36.201,
+  "lon": 44.938,
+  "areaHa": 5,
+  "areaNote": "Small mound now under Lake Dukan; coordinates approximate. ~3-6 ha.",
+  "populationEstimate": {
+   "low": 500,
+   "high": 2000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.276,
+   "heightKm": 0.23,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.138,
+     0.0
+    ],
+    [
+     0.133,
+     0.03
+    ],
+    [
+     0.12,
+     0.057
+    ],
+    [
+     0.098,
+     0.081
+    ],
+    [
+     0.069,
+     0.1
+    ],
+    [
+     0.036,
+     0.111
+    ],
+    [
+     0.0,
+     0.115
+    ],
+    [
+     -0.036,
+     0.111
+    ],
+    [
+     -0.069,
+     0.1
+    ],
+    [
+     -0.098,
+     0.081
+    ],
+    [
+     -0.12,
+     0.057
+    ],
+    [
+     -0.133,
+     0.03
+    ],
+    [
+     -0.138,
+     0.0
+    ],
+    [
+     -0.133,
+     -0.03
+    ],
+    [
+     -0.12,
+     -0.057
+    ],
+    [
+     -0.098,
+     -0.081
+    ],
+    [
+     -0.069,
+     -0.1
+    ],
+    [
+     -0.036,
+     -0.111
+    ],
+    [
+     -0.0,
+     -0.115
+    ],
+    [
+     0.036,
+     -0.111
+    ],
+    [
+     0.069,
+     -0.1
+    ],
+    [
+     0.098,
+     -0.081
+    ],
+    [
+     0.12,
+     -0.058
+    ],
+    [
+     0.133,
+     -0.03
+    ]
+   ]
+  },
+  "polity": "zagros",
+  "polity1792": "zagros",
+  "polity1750": "zagros",
+  "tier": 3,
+  "founded": "Hassuna period.",
+  "description": "Seat of Kuwari, ruler of the 'land of Utûm', on the Lower Zab in the Zagros foothills.",
+  "hammurabiEra": "Its palace archive (c. 1781-1779) contains Shamshi-Adad's letters to Kuwari; the palace burned c. 1779, just before Hammurabi's main wars, when Turukkean raiders overran the region.",
+  "sources": [
+   "Wikipedia, 'Tell Shemshara'",
+   "Eidem & Laessøe, The Shemshara Archives (2001)"
+  ]
+ },
+ {
+  "id": "qatna",
+  "name": "Qatna",
+  "akkadian": "Qaṭna",
+  "modernName": "Tell el-Mishrife, Homs, Syria",
+  "lat": 34.835,
+  "lon": 36.866,
+  "areaHa": 110,
+  "areaNote": "Square earthen ramparts ~1 x 1 km enclose ~110 ha (Middle Bronze Age). NOTE: lies ~60 km west of the map bbox (lon 37.5).",
+  "populationEstimate": {
+   "low": 10000,
+   "high": 25000
+  },
+  "footprint": {
+   "type": "rect",
+   "widthKm": 1.05,
+   "heightKm": 1.05,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.525,
+     -0.525
+    ],
+    [
+     0.525,
+     -0.525
+    ],
+    [
+     0.525,
+     0.525
+    ],
+    [
+     -0.525,
+     0.525
+    ]
+   ]
+  },
+  "polity": "qatna",
+  "polity1792": "qatna",
+  "polity1750": "qatna",
+  "tier": 2,
+  "founded": "3rd millennium BC.",
+  "description": "Capital of a major western Syrian kingdom, rival of Yamhad, with a monumental royal palace.",
+  "hammurabiEra": "King Ishi-Addu allied with Shamshi-Adad (his daughter married Yasmah-Addu of Mari); his successor Amut-pi-El was among the 'kings followed by twenty kings' in a Mari letter.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Morandi Bonacossi / Pfälzner, Qatna excavations"
+  ]
+ },
+ {
+  "id": "aleppo",
+  "name": "Aleppo (Halab)",
+  "akkadian": "Ḫalab",
+  "modernName": "Aleppo citadel, Syria",
+  "lat": 36.199,
+  "lon": 37.162,
+  "areaHa": null,
+  "areaNote": "OB city buried under modern Aleppo; size unknown. Footprint shows only the citadel hill (~0.45 x 0.33 km). NOTE: lies just west of the map bbox (lon 37.5).",
+  "populationEstimate": {
+   "low": 10000,
+   "high": 40000
+  },
+  "footprint": {
+   "type": "ellipse",
+   "widthKm": 0.45,
+   "heightKm": 0.33,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     0.225,
+     0.0
+    ],
+    [
+     0.217,
+     0.043
+    ],
+    [
+     0.195,
+     0.082
+    ],
+    [
+     0.159,
+     0.117
+    ],
+    [
+     0.113,
+     0.143
+    ],
+    [
+     0.058,
+     0.159
+    ],
+    [
+     0.0,
+     0.165
+    ],
+    [
+     -0.058,
+     0.159
+    ],
+    [
+     -0.112,
+     0.143
+    ],
+    [
+     -0.159,
+     0.117
+    ],
+    [
+     -0.195,
+     0.082
+    ],
+    [
+     -0.217,
+     0.043
+    ],
+    [
+     -0.225,
+     0.0
+    ],
+    [
+     -0.217,
+     -0.043
+    ],
+    [
+     -0.195,
+     -0.082
+    ],
+    [
+     -0.159,
+     -0.117
+    ],
+    [
+     -0.113,
+     -0.143
+    ],
+    [
+     -0.058,
+     -0.159
+    ],
+    [
+     -0.0,
+     -0.165
+    ],
+    [
+     0.058,
+     -0.159
+    ],
+    [
+     0.113,
+     -0.143
+    ],
+    [
+     0.159,
+     -0.117
+    ],
+    [
+     0.195,
+     -0.083
+    ],
+    [
+     0.217,
+     -0.043
+    ]
+   ]
+  },
+  "polity": "yamhad",
+  "polity1792": "yamhad",
+  "polity1750": "yamhad",
+  "tier": 2,
+  "founded": "3rd millennium BC (Ebla texts).",
+  "description": "Capital of Yamhad and the temple of the storm god Haddad (Addu) of Aleppo, the most powerful kingdom of northern Syria.",
+  "hammurabiEra": "Yarim-Lim I sheltered Zimri-Lim in exile and backed his return to Mari (1775); Zimri-Lim married his daughter Shibtu. A Mari letter says 'twenty kings follow Yarim-Lim of Yamhad'. Hammurabi-Yamhad (Hammurabi I of Aleppo) succeeded c. 1764.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Kohlmeyer, The Temple of the Storm God in Aleppo"
+  ]
+ },
+ {
+  "id": "susa",
+  "name": "Susa",
+  "akkadian": "Šušan",
+  "modernName": "Shush, Khuzestan, Iran",
+  "lat": 32.189,
+  "lon": 48.258,
+  "areaHa": 100,
+  "areaNote": "Mounds (Acropole, Apadana, Ville Royale) cover ~250 ha in later periods; the sukkalmah-period city of c. 1800 BC is estimated at ~85-120 ha.",
+  "populationEstimate": {
+   "low": 10000,
+   "high": 30000
+  },
+  "footprint": {
+   "type": "polygon",
+   "widthKm": 1.143,
+   "heightKm": 1.142,
+   "rotationDeg": 0,
+   "pointsKm": [
+    [
+     -0.515,
+     0.44
+    ],
+    [
+     -0.075,
+     0.571
+    ],
+    [
+     0.452,
+     0.352
+    ],
+    [
+     0.584,
+     -0.176
+    ],
+    [
+     0.364,
+     -0.571
+    ],
+    [
+     -0.251,
+     -0.528
+    ],
+    [
+     -0.559,
+     -0.088
+    ]
+   ]
+  },
+  "polity": "elam",
+  "polity1792": "elam",
+  "polity1750": "elam",
+  "tier": 1,
+  "founded": "c. 4200 BC.",
+  "description": "Lowland capital of Elam under the sukkalmah dynasty, where the Elamite overlord was treated as 'father' by Mesopotamian kings.",
+  "hammurabiEra": "Siwe-palar-huppak led the Elamite invasion of Mesopotamia (1766-1764), taking Eshnunna and pushing to the Khabur before a coalition led by Hammurabi drove him out. Hammurabi's Code stele (now in the Louvre) was found here in 1901, carried off by Shutruk-Nahhunte c. 1158 BC.",
+  "sources": [
+   "Wikipedia (site article, coordinates)",
+   "Potts, The Archaeology of Elam (2016)",
+   "Louvre, Sb 8 (Code of Hammurabi)"
+  ]
+ }
+]

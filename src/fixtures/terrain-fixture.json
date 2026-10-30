@@ -1,0 +1,13 @@
+{
+  "bbox": {
+    "west": 37.5,
+    "east": 50.5,
+    "south": 28.5,
+    "north": 38.5
+  },
+  "width": 260,
+  "height": 200,
+  "encoding": "terrarium",
+  "pixelRegistration": "area",
+  "source": "PROCEDURAL FIXTURE (not real terrain)"
+}
