@@ -24,7 +24,7 @@ const isMobile = window.matchMedia('(max-width: 820px), (pointer: coarse)').matc
 // ---------------------------------------------------------------- renderer / scene
 const viewport = $('#viewport');
 const renderer = new THREE.WebGLRenderer({ antialias: true, logarithmicDepthBuffer: true, powerPreference: 'high-performance' });
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1.5 : 2));
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 1.25));
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 viewport.appendChild(renderer.domElement);
@@ -114,7 +114,7 @@ async function boot() {
   terrain.exaggeration = Number($('#exag').value);
   // ?seg=N overrides mesh resolution (useful on slow GPUs / for testing)
   const segParam = Number(new URLSearchParams(location.search).get('seg'));
-  const segments = segParam >= 64 && segParam <= 2048 ? segParam : isMobile ? 512 : 1024;
+  const segments = segParam >= 64 && segParam <= 2048 ? segParam : isMobile ? 256 : 512;
   await terrain.init(segments, (m) => setStatus(m, 30));
   scene.add(terrain.mesh);
 
@@ -144,6 +144,7 @@ async function boot() {
     setTimeout(async () => {
       try {
         if (await terrain.upgrade()) refreshOverlays();
+        invalidate(2000);
       } catch (e) {
         console.warn('[terrain] full-resolution upgrade failed', e);
       }
@@ -440,7 +441,24 @@ const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 let lastDeclutter = 0;
 const hf = () => terrain.hf;
 
+// Render on demand: only draw while something is changing (input, fly-to,
+// damping settling, async loads). An idle map costs no GPU time.
+let renderUntil = 0;
+const lastCam = new THREE.Matrix4();
+const camMoved = (a, b) => a.elements.some((v, i) => Math.abs(v - b.elements[i]) > 1e-4);
+function invalidate(ms = 1500) { renderUntil = Math.max(renderUntil, performance.now() + ms); }
+for (const ev of ['pointerdown', 'pointermove', 'wheel', 'keydown', 'input', 'change', 'click', 'touchmove'])
+  window.addEventListener(ev, (e) => { if (ev !== 'pointermove' || e.buttons) invalidate(); else invalidate(300); }, { passive: true });
+document.addEventListener('visibilitychange', () => { if (!document.hidden) invalidate(); });
+THREE.DefaultLoadingManager.onLoad = () => invalidate();
+invalidate(10000);
+
 function tick(now) {
+  if (document.hidden) return;
+  const moved = camMoved(lastCam, camera.matrixWorld);
+  if (!fly && !moved && now > renderUntil) return;
+  if (moved) invalidate(200);
+  lastCam.copy(camera.matrixWorld);
   if (fly) {
     const t = Math.min(1, (now - fly.t0) / fly.dur);
     const k = ease(t);
@@ -465,7 +483,8 @@ function tick(now) {
   }
   if (!fly) {
     const gy = terrain.surfaceY(controls.target.x, controls.target.z);
-    const dy = (gy - controls.target.y) * 0.12;
+    let dy = (gy - controls.target.y) * 0.12;
+    if (Math.abs(dy) < 1e-4) dy = 0;
     controls.target.y += dy;
     camera.position.y += dy;
   }
