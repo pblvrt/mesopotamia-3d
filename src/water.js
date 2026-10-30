@@ -203,6 +203,8 @@ export class Water {
     this.riverLabels = [];
     const named = [...longestByName].sort((a, b) => b[1].pts.length - a[1].pts.length);
     for (const [name, item] of named) {
+      // the two great rivers get large aligned labels instead (arealabels.js)
+      if (/^(Euphrates|Tigris) \(/.test(name)) continue;
       const el = document.createElement('div');
       el.className = 'river-label';
       el.textContent = name;

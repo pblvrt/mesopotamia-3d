@@ -116,6 +116,8 @@ export class Terrain {
     this.uniforms = {
       uMask: { value: null },
       uAncient: { value: 1 },
+      uTerr: { value: null }, // kingdom-territory colours (see territories.js), row 0 = north
+      uTerrOn: { value: 1 },
     };
   }
 
@@ -163,11 +165,14 @@ export class Terrain {
     mat.onBeforeCompile = (shader) => {
       shader.uniforms.uMask = this.uniforms.uMask;
       shader.uniforms.uAncient = this.uniforms.uAncient;
+      shader.uniforms.uTerr = this.uniforms.uTerr;
+      shader.uniforms.uTerrOn = this.uniforms.uTerrOn;
       shader.vertexShader = shader.vertexShader
-        .replace('#include <common>', '#include <common>\nuniform sampler2D uMask;\nuniform float uAncient;\nvarying vec2 vMask;')
+        .replace('#include <common>', '#include <common>\nuniform sampler2D uMask;\nuniform float uAncient;\nvarying vec2 vMask;\nvarying vec2 vTUv;')
         .replace(
           '#include <begin_vertex>',
           `#include <begin_vertex>
+          vTUv = uv;
           vec2 m = texture2D(uMask, uv).rg * uAncient;
           vMask = m;
           // Ancient sea: push terrain below the water surface; marsh: just under marsh water.
@@ -175,17 +180,26 @@ export class Terrain {
           transformed.y = mix(transformed.y, min(transformed.y, 0.0002), m.g * (1.0 - m.r));`
         );
       shader.fragmentShader = shader.fragmentShader
-        .replace('#include <common>', '#include <common>\nvarying vec2 vMask;')
+        .replace('#include <common>', '#include <common>\nvarying vec2 vMask;\nvarying vec2 vTUv;\nuniform sampler2D uTerr;\nuniform float uTerrOn;')
         .replace(
           '#include <map_fragment>',
           `#include <map_fragment>
-          diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.32, 0.42, 0.25), clamp(vMask.g, 0.0, 1.0) * 0.55);`
+          diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.32, 0.42, 0.25), clamp(vMask.g, 0.0, 1.0) * 0.55);
+          vec4 terr = texture2D(uTerr, vec2(vTUv.x, 1.0 - vTUv.y));
+          float onLand = uTerrOn * (1.0 - clamp(vMask.r, 0.0, 1.0));
+          // unclaimed land is muted a little so the kingdoms stand out
+          float lum = dot(diffuseColor.rgb, vec3(0.299, 0.587, 0.114));
+          diffuseColor.rgb = mix(diffuseColor.rgb, vec3(lum) * 0.97, onLand * 0.4 * (1.0 - smoothstep(0.0, 0.25, terr.a)));
+          diffuseColor.rgb = mix(diffuseColor.rgb, terr.rgb, terr.a * onLand);`
         );
     };
     // blank mask until water layer provides one
     const blank = new THREE.DataTexture(new Uint8Array([0, 0, 0, 255]), 1, 1);
     blank.needsUpdate = true;
     this.uniforms.uMask.value = blank;
+    const clear = new THREE.DataTexture(new Uint8Array([0, 0, 0, 0]), 1, 1);
+    clear.needsUpdate = true;
+    if (!this.uniforms.uTerr.value) this.uniforms.uTerr.value = clear;
 
     this.material = mat;
     this.mesh = new THREE.Mesh(geo, mat);

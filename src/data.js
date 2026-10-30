@@ -46,8 +46,9 @@ export function loadHistoricalData() {
   const references = asArray(getJson('references.json', []));
   const rivers = getGeo('rivers.geojson');
   const coast = getGeo('coast.geojson');
+  const modernBorders = getGeo('modern-borders.geojson');
   if (usedFixtures.length) {
     console.info('[mesopotamia-3d] Using TEMPORARY fixtures for:', usedFixtures.join(', '));
   }
-  return { cities, polities, timeline, references, rivers, coast };
+  return { cities, polities, timeline, references, rivers, coast, modernBorders };
 }

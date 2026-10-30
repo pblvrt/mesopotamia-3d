@@ -8,8 +8,11 @@ import { Water } from './water.js';
 import { Cities, NEUTRAL_COLOR } from './cities.js';
 import { MeasureTool, CompareTool, ScaleBar, fmtKm, fmtDays } from './tools.js';
 import { makeOwnership } from './conquests.js';
-import { project, unproject, haversineKm, ringAreaKm2, footprintRing } from './projection.js';
+import { project, unproject, haversineKm, ringAreaKm2, footprintRing, BBOX } from './projection.js';
 import { cityPanelHtml, legendHtml, timelineCardHtml, fmtYear, reignYear, esc } from './ui.js';
+import { Territories } from './territories.js';
+import { AreaLabels } from './arealabels.js';
+import { Tour } from './tour.js';
 
 const $ = (s) => document.querySelector(s);
 const statusEl = $('#loading-status');
@@ -28,6 +31,13 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, isMobile ? 1 : 1.25));
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 viewport.appendChild(renderer.domElement);
+
+// Two label layers: large faint map labels (kingdoms, regions, modern places) underneath,
+// city labels on top.
+const areaRenderer = new CSS2DRenderer();
+areaRenderer.setSize(window.innerWidth, window.innerHeight);
+areaRenderer.domElement.className = 'label-layer area-layer';
+viewport.appendChild(areaRenderer.domElement);
 
 const labelRenderer = new CSS2DRenderer();
 labelRenderer.setSize(window.innerWidth, window.innerHeight);
@@ -85,9 +95,29 @@ controls.maxPolarAngle = THREE.MathUtils.degToRad(84);
 controls.zoomToCursor = true;
 controls.zoomSpeed = 1.2;
 
-const OVERVIEW = { target: new THREE.Vector3(0, 0, -30), position: new THREE.Vector3(60, 980, 820) };
-camera.position.copy(OVERVIEW.position);
-controls.target.copy(OVERVIEW.target);
+// Overview: fairly top-down, framing the alluvium, Mari (NW), Assur (N) and Susa (E).
+// Distance adapts to the screen's aspect ratio so portrait phones see the same area.
+const OVERVIEW_POLAR = 33;
+function overviewView() {
+  const aspect = window.innerWidth / window.innerHeight;
+  const needW = 900, needH = 760; // km of ground to fit
+  const t = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+  const dist = Math.max(needH / (2 * t), needW / (2 * t * aspect)) * 1.12;
+  return { lat: 33.05, lon: 44.6, dist: Math.min(2600, dist), polar: OVERVIEW_POLAR };
+}
+function viewPose(v) {
+  const p = project(v.lon, v.lat);
+  const target = new THREE.Vector3(p.x, 0, p.z);
+  const pol = THREE.MathUtils.degToRad(v.polar ?? 40);
+  const az = THREE.MathUtils.degToRad(v.az ?? 0);
+  const position = target.clone().add(new THREE.Vector3(Math.sin(pol) * Math.sin(az), Math.cos(pol), Math.sin(pol) * Math.cos(az)).multiplyScalar(v.dist));
+  return { target, position };
+}
+{
+  const o = viewPose(overviewView());
+  camera.position.copy(o.position);
+  controls.target.copy(o.target);
+}
 
 // ---------------------------------------------------------------- state
 const data = loadHistoricalData();
@@ -98,13 +128,17 @@ const state = {
   measuring: false,
   riversOn: true,
   labelsOn: true,
+  timelineOn: true,
+  territoriesOn: true,
+  regionsOn: true,
+  modernOn: true,
 };
 const polityById = new Map(data.polities.map((p) => [p.id, p]));
 const ownerAt = makeOwnership(data.cities, data.polities);
 const centralPark = data.references.find((r) => /central.?park/i.test(r.id + ' ' + r.name));
 const CENTRAL_PARK_HA = centralPark?.areaHa || 341;
 
-let terrain, water, cities, measure, compare, scaleBar;
+let terrain, water, cities, measure, compare, scaleBar, territories, areaLabels, tour;
 let fly = null; // active camera animation
 
 // ---------------------------------------------------------------- boot
@@ -123,16 +157,24 @@ async function boot() {
   water.setResolution(window.innerWidth, window.innerHeight);
 
   setStatus('Raising city walls…', 75);
-  cities = new Cities(terrain, data, scene, labelRoot, { onSelect: selectCity });
+  // cities outside the terrain tile (Aleppo, Qatna) still shape the kingdom areas but get no pin
+  const onMap = (c) => c.lon >= BBOX.west && c.lon <= BBOX.east && c.lat >= BBOX.south && c.lat <= BBOX.north;
+  cities = new Cities(terrain, { ...data, cities: data.cities.filter(onMap) }, scene, labelRoot, { onSelect: selectCity });
   measure = new MeasureTool(terrain, scene, labelRoot, showMeasureResult);
   compare = new CompareTool(terrain, scene, labelRoot);
   scaleBar = new ScaleBar($('#scalebar'));
+
+  setStatus('Drawing the kingdoms…', 88);
+  territories = new Territories(terrain, data.cities, data.polities, ownerAt);
+  areaLabels = new AreaLabels(terrain, data, scene, data.polities);
+  areaLabels.setResolution(window.innerWidth, window.innerHeight);
 
   buildLegend();
   buildAttribution();
   setupTimeline();
   wireControls();
   setYear(state.year);
+  setupTour();
 
   setStatus('Ready', 100);
   renderer.setAnimationLoop(tick);
@@ -154,6 +196,7 @@ async function boot() {
 
 function refreshOverlays() {
   water.updateHeights();
+  areaLabels.refreshHeights();
   cities.rebuild();
   measure.update();
   compare.refresh();
@@ -208,9 +251,124 @@ function setYear(y) {
   const hl = latest == null ? [] : past.filter((e) => e.year === latest).flatMap((e) => e.cities || []);
   if (cities) {
     cities.setColors(colorFor);
-    cities.setHighlighted(document.getElementById('timeline').hidden ? [] : hl);
+    cities.setHighlighted(state.timelineOn && !tour?.open ? hl : []);
+  }
+  if (territories) {
+    const anchors = territories.setYear(y);
+    areaLabels.setPolities(state.territoriesOn ? anchors : [], y);
   }
   if (state.selectedId) renderCityPanel(state.selectedId, true);
+  invalidate();
+}
+
+// ---------------------------------------------------------------- layers
+const LAYER_INPUT = { territories: '#lyr-territories', regions: '#lyr-regions', modern: '#lyr-modern', rivers: '#lyr-rivers' };
+function setLayer(name, on) {
+  const input = LAYER_INPUT[name] && $(LAYER_INPUT[name]);
+  if (input) input.checked = on;
+  if (name === 'territories') {
+    state.territoriesOn = on;
+    territories.setVisible(on);
+    areaLabels.setPolities(on ? territories.centroids : [], state.year);
+  } else if (name === 'regions') {
+    state.regionsOn = on;
+    areaLabels.setGroupVisible('region', on);
+  } else if (name === 'modern') {
+    state.modernOn = on;
+    areaLabels.setGroupVisible('modern', on);
+  } else if (name === 'rivers') {
+    state.riversOn = on;
+    water.setRiversVisible(on);
+  }
+  invalidate();
+}
+function setCoast(mode) {
+  const ancient = mode !== 'modern';
+  water.setAncient(ancient);
+  const r = $(`input[name=coast][value=${ancient ? 'ancient' : 'modern'}]`);
+  if (r) r.checked = true;
+  invalidate();
+}
+
+// ---------------------------------------------------------------- guided tour
+function frameView(view) {
+  let v = view;
+  if (view === 'overview') v = overviewView();
+  else if (view.city) {
+    const it = cities.byId.get(view.city);
+    let x = it.x, z = it.z;
+    if (compare.current) x = (it.x + compare.current.cx) / 2;
+    const ll = unproject(x, z);
+    v = { ...view, lat: ll.lat, lon: ll.lon };
+  } else if (view.between) {
+    const [a, b] = view.between.map((id) => cities.byId.get(id));
+    const ll = unproject((a.x + b.x) / 2, (a.z + b.z) / 2);
+    v = { ...view, lat: ll.lat, lon: ll.lon };
+  }
+  // keep the subject clear of the tour card (bottom-left on desktop, bottom sheet on phones)
+  const card = tour?.open ? $('#tour').getBoundingClientRect() : null;
+  if (card && card.width) {
+    const kmPerPx = (2 * v.dist * Math.tan(THREE.MathUtils.degToRad(camera.fov / 2))) / window.innerHeight;
+    const p = project(v.lon, v.lat);
+    if (card.width < window.innerWidth * 0.8) p.x -= ((card.width + 14) / 2) * kmPerPx;
+    else p.z += ((window.innerHeight - card.top) / 2) * kmPerPx * 0.8;
+    v = { ...v, ...unproject(p.x, p.z) };
+  }
+  const pose = viewPose(v);
+  const gy = terrain.surfaceY(pose.target.x, pose.target.z);
+  pose.target.y += gy;
+  pose.position.y += gy;
+  flyToRaw(pose.target, pose.position);
+  invalidate();
+}
+
+function setupTour() {
+  const api = {
+    setYear,
+    setCoast,
+    invalidate,
+    frame: frameView,
+    color: (id) => polityById.get(id)?.color || NEUTRAL_COLOR,
+    setLayers(l) {
+      for (const k of ['territories', 'regions', 'modern', 'rivers']) if (k in l) setLayer(k, l[k]);
+      if (l.coast) setCoast(l.coast);
+    },
+    highlight: (ids) => cities.setHighlighted(ids),
+    showCompare(cityId, refId, mode) {
+      const ref = data.references.find((r) => r.id === refId) || centralPark;
+      const it = cities.byId.get(cityId);
+      if (ref && it) compare.show(ref, it, mode);
+    },
+    clearCompare: () => compare.clear(),
+    measure(a, b) {
+      measure.clear();
+      for (const id of [a, b]) {
+        const it = cities.byId.get(id);
+        measure.addPoint({ x: it.x, z: it.z }, it.city.name);
+      }
+    },
+    clearMeasure: () => measure.clear(),
+    cityKm(a, b) {
+      const [p, q] = [a, b].map((id) => cities.byId.get(id).city);
+      return haversineKm(p, q);
+    },
+    onOpen() {
+      selectCity(null);
+      if (state.measuring) setMeasuring(false);
+      closeLayers();
+    },
+    onClose(finished) {
+      cities.setHighlighted([]);
+      if (finished) frameView('overview');
+      setYear(state.year);
+    },
+  };
+  tour = new Tour(api, $('#tour'));
+  $('#btn-tour').addEventListener('click', () => (tour.open ? tour.close(false) : tour.start(0)));
+  const q = new URLSearchParams(location.search);
+  const qStep = Number(q.get('step'));
+  if (q.get('tour') === '0') return;
+  if (qStep >= 1 || q.get('tour') === '1' || !Tour.seen()) tour.start(qStep >= 1 ? qStep - 1 : 0);
 }
 
 // ---------------------------------------------------------------- city selection
@@ -302,6 +460,7 @@ function flyTo(target, dist, polarDeg = 50) {
   };
 }
 function flyToRaw(target, position) {
+  invalidate();
   fly = { t0: performance.now(), dur: 1700, fromT: controls.target.clone(), fromP: camera.position.clone(), toT: target.clone(), toP: position.clone() };
 }
 
@@ -327,12 +486,9 @@ function wireControls() {
   });
 
   document.querySelectorAll('input[name=coast]').forEach((r) =>
-    r.addEventListener('change', () => water.setAncient($('input[name=coast]:checked').value === 'ancient'))
+    r.addEventListener('change', () => setCoast($('input[name=coast]:checked').value))
   );
-  $('#lyr-rivers').addEventListener('change', (e) => {
-    state.riversOn = e.target.checked;
-    water.setRiversVisible(e.target.checked);
-  });
+  for (const name of Object.keys(LAYER_INPUT)) $(LAYER_INPUT[name]).addEventListener('change', (e) => setLayer(name, e.target.checked));
   $('#lyr-cities').addEventListener('change', (e) => {
     cities.setVisible(e.target.checked);
     compare.clear();
@@ -340,25 +496,29 @@ function wireControls() {
   $('#lyr-labels').addEventListener('change', (e) => {
     cities.labelsOn = e.target.checked;
     state.labelsOn = e.target.checked;
+    areaRenderer.domElement.style.display = e.target.checked ? '' : 'none';
+    invalidate();
   });
   $('#lyr-polities').addEventListener('change', (e) => {
     state.polityColors = e.target.checked;
     cities.setColors(colorFor);
   });
   $('#lyr-timeline').addEventListener('change', (e) => {
+    state.timelineOn = e.target.checked;
     $('#timeline').hidden = !e.target.checked;
     setYear(state.year);
   });
 
   const mBtn = $('#btn-measure');
   mBtn.addEventListener('click', () => setMeasuring(!state.measuring));
-  $('#btn-overview').addEventListener('click', () => flyToRaw(OVERVIEW.target, OVERVIEW.position));
+  $('#btn-overview').addEventListener('click', () => frameView('overview'));
 
   $('#city-panel .close').addEventListener('click', () => selectCity(null));
   const toggle = $('#controls-toggle');
   toggle.addEventListener('click', () => {
     const open = $('#controls').classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(open));
+    invalidate();
   });
 
   window.addEventListener('keydown', (e) => {
@@ -368,8 +528,19 @@ function wireControls() {
     }
   });
 
-  // click vs drag discrimination
+  // one-line controls hint, faded after the first real interaction with the map
   const el = renderer.domElement;
+  const hint = $('#hint');
+  if (isMobile) hint.textContent = 'Drag to move · Two fingers to tilt · Pinch to zoom · Tap a city';
+  const dismissHint = () => {
+    hint.classList.add('gone');
+    el.removeEventListener('pointerdown', dismissHint);
+    el.removeEventListener('wheel', dismissHint);
+  };
+  el.addEventListener('pointerdown', dismissHint);
+  el.addEventListener('wheel', dismissHint, { passive: true });
+
+  // click vs drag discrimination
   let down = null;
   el.addEventListener('pointerdown', (e) => {
     down = { x: e.clientX, y: e.clientY, t: performance.now(), button: e.button };
@@ -381,6 +552,11 @@ function wireControls() {
     if (moved < 6 && performance.now() - down.t < 600) handleClick(e.clientX, e.clientY);
     down = null;
   });
+}
+
+function closeLayers() {
+  $('#controls').classList.remove('open');
+  $('#controls-toggle').setAttribute('aria-expanded', 'false');
 }
 
 function setMeasuring(on) {
@@ -501,14 +677,16 @@ function tick(now) {
   measure.updateForCamera(dist, window.innerWidth, window.innerHeight);
   if (now - lastDeclutter > 90) {
     lastDeclutter = now;
-    const riverLabelsOn = state.riversOn && state.labelsOn && dist < 1600;
+    const riverLabelsOn = state.riversOn && state.labelsOn && dist < 800;
     const extras = water.riverLabels.map((obj) => ({ obj, w: obj.userData.w, show: riverLabelsOn }));
-    cities.declutter(camera, dist, window.innerWidth, window.innerHeight, extras);
+    const placed = cities.declutter(camera, dist, window.innerWidth, window.innerHeight, extras);
+    areaLabels.update(camera, dist, window.innerWidth, window.innerHeight, placed);
     scaleBar.update(camera, dist, window.innerHeight);
     if (compare.current) compare.current.label.visible = dist < Math.max(30, compare.current.ext * 40);
   }
 
   renderer.render(scene, camera);
+  areaRenderer.render(areaLabels.root, camera);
   labelRenderer.render(scene, camera);
 }
 
@@ -518,7 +696,10 @@ window.addEventListener('resize', () => {
   camera.updateProjectionMatrix();
   renderer.setSize(w, h);
   labelRenderer.setSize(w, h);
+  areaRenderer.setSize(w, h);
   water?.setResolution(w, h);
+  areaLabels?.setResolution(w, h);
+  invalidate();
 });
 
 boot().catch((e) => {
@@ -527,4 +708,4 @@ boot().catch((e) => {
 });
 
 // exposed for debugging in the console
-window.__meso = { get terrain() { return terrain; }, get cities() { return cities; }, data, project };
+window.__meso = { get terrain() { return terrain; }, get cities() { return cities; }, get tour() { return tour; }, get territories() { return territories; }, data, project };

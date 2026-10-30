@@ -9,8 +9,24 @@ Built with [three.js](https://threejs.org) and [Vite](https://vitejs.dev). It us
 
 ## Features
 
+- **Guided tour** (shown on first visit; reopen with **▶ Tour**): seven short cards that fly the
+  camera and set the layers and year: the land, the kingdoms of 1792 BC, Babylon up close next to
+  Central Park, the Babylon–Larsa distance, Mari, the ancient shoreline (with a coast toggle), and
+  Hammurabi's kingdom in 1750 BC. Arrow keys work; "seen" is kept in `localStorage`
+  (`meso3d.tourSeen`). `?tour=1` forces it, `?tour=0` skips it, `?step=N` opens step N.
+- **Kingdom territories** (`src/territories.js`): a 1024-px colour texture draped on the terrain.
+  Each texel takes the polity of its nearest city (capitals reach further), fading out beyond
+  ~120 km and above ~1500 m, with darker borders. It is recoloured on every year change (a few
+  ms), and large faint polity names sit at each territory's centre. These are schematic, not
+  real borders.
+- **Region and river labels** (`src/arealabels.js`): Sumer, Akkad, Assyria, Elam, Jazira, the
+  Zagros and Taurus, the Syrian desert, the Persian Gulf ("Lower Sea"), Euphrates and Tigris.
+- **Modern orientation layer** (on, faint): grey modern city pins, country names and dashed
+  modern borders (Natural Earth 1:50m, public domain), clipped and simplified by
+  `scripts/make-modern-borders.py` into `src/data/modern-borders.geojson`.
+
 - **Terrain**: a real elevation model with a hillshaded relief texture. Vertical exaggeration
-  can be set from 1× to 40× (default 15×). A low-resolution heightmap loads first and is
+  can be set from 1× to 40× (default 6×). A low-resolution heightmap loads first and is
   replaced by the full-resolution one in the background. Includes a sea plane at 0 m, sky, haze
   and map-style controls.
 - **Ancient water**: the reconstructed river courses of c. 1750 BC (Euphrates, Tigris, Diyala,
@@ -32,12 +48,14 @@ Built with [three.js](https://threejs.org) and [Vite](https://vitejs.dev). It us
 - **Political timeline**: a slider from 1792 to 1750 BC, with a play button. It shows event
   cards from `timeline.json` and recolours each city by the polity that held it that year
   (see `src/conquests.js`).
-- A parchment-themed UI with a legend, layer toggles, an attribution footer and a loading
-  screen. On mobile, the layers panel collapses and the city panel becomes a bottom sheet.
+- A parchment-themed UI with a legend, layer toggles (behind the **☰ Layers** button), a one-line
+  controls hint that fades after the first interaction, an attribution footer and a loading
+  screen. On mobile, the city panel and the tour become bottom sheets.
 
 Controls: left-drag pans, right-drag (or two fingers) rotates, the scroll wheel or a pinch
 zooms. `Esc` closes the panel or the measure tool. Add `?seg=256` to the URL to use a lighter
-terrain mesh on slow GPUs (the default is 1024 segments on desktop and 512 on mobile).
+terrain mesh on slow GPUs (the default is 512 segments on desktop and 256 on mobile). Rendering is on demand: nothing
+is drawn while the map is idle.
 
 ## Running
 
@@ -117,6 +135,10 @@ src/water.js          sea plane, ancient sea/marsh meshes + mask, river/canal li
 src/cities.js         footprints, markers, labels, declutter, picking
 src/tools.js          measure tool, compare-scale tool, scale bar
 src/conquests.js      per-year polity ownership
+src/territories.js    per-year kingdom territory texture + label anchors
+src/arealabels.js     region, river, polity, modern city/country labels; modern borders
+src/tour.js           guided tour steps and card
+scripts/make-modern-borders.py  builds src/data/modern-borders.geojson from Natural Earth
 src/ui.js             HTML builders for the city panel, legend, timeline cards
 src/style.css         parchment theme, responsive layout
 src/fixtures/         TEMPORARY fallback data (used only if real files are missing)

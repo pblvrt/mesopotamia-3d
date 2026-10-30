@@ -26,7 +26,10 @@
       <p>c. 1792 – 1750 BC · cities at true scale</p>
     </header>
 
-    <button id="controls-toggle" class="icon-btn" aria-label="Show layers and tools" aria-expanded="false">☰</button>
+    <nav id="topbar">
+      <button id="btn-tour" class="pill">▶ Tour</button>
+      <button id="controls-toggle" class="pill" aria-label="Show layers and tools" aria-expanded="false" aria-controls="controls">☰ Layers</button>
+    </nav>
 
     <aside id="controls" class="panel">
       <section>
@@ -38,15 +41,18 @@
       </section>
       <section>
         <h2>Layers</h2>
+        <label class="chk"><input type="checkbox" id="lyr-territories" checked /> Kingdom areas</label>
+        <label class="chk"><input type="checkbox" id="lyr-regions" checked /> Region &amp; river names</label>
+        <label class="chk"><input type="checkbox" id="lyr-modern" checked /> Modern cities &amp; borders</label>
         <label class="chk"><input type="checkbox" id="lyr-rivers" checked /> Rivers &amp; canals</label>
         <label class="chk"><input type="checkbox" id="lyr-cities" checked /> City footprints</label>
         <label class="chk"><input type="checkbox" id="lyr-labels" checked /> Labels</label>
-        <label class="chk"><input type="checkbox" id="lyr-polities" checked /> Polity colours</label>
+        <label class="chk"><input type="checkbox" id="lyr-polities" checked /> Colour cities by kingdom</label>
         <label class="chk"><input type="checkbox" id="lyr-timeline" checked /> Timeline</label>
       </section>
       <section>
-        <h2>Vertical exaggeration <output id="exag-val">15×</output></h2>
-        <input type="range" id="exag" min="1" max="40" step="1" value="15" aria-label="Vertical exaggeration" />
+        <h2>Vertical exaggeration <output id="exag-val">6×</output></h2>
+        <input type="range" id="exag" min="1" max="40" step="1" value="6" aria-label="Vertical exaggeration" />
       </section>
       <section>
         <h2>Tools</h2>
@@ -58,8 +64,11 @@
         <h2>Legend</h2>
         <div id="legend"></div>
       </section>
-      <p class="hint">Drag to pan · right-drag (or two fingers) to rotate · scroll/pinch to zoom · click a city</p>
     </aside>
+
+    <section id="tour" class="panel" hidden aria-live="polite" aria-label="Guided tour"></section>
+
+    <div id="hint" role="note">Drag to move · Right-drag to tilt · Scroll to zoom · Click a city</div>
 
     <aside id="city-panel" class="panel" hidden aria-live="polite">
       <button class="close icon-btn" aria-label="Close">×</button>

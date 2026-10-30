@@ -227,7 +227,7 @@ export class Cities {
     for (const it of order) {
       const tier = it.city.tier || 3;
       const forced = it === this.selected || this.highlighted.has(it.city.id);
-      let vis = show && (forced || tier === 1 || (tier === 2 && dist < 750) || (tier >= 3 && dist < 280));
+      let vis = show && (forced || tier === 1 || (tier === 2 && dist < 1500) || (tier >= 3 && dist < 300));
       if (vis) {
         v.copy(it.label.position).project(camera);
         if (v.z > 1 || v.z < -1) vis = false;
@@ -255,6 +255,7 @@ export class Cities {
       }
       ex.obj.visible = vis;
     }
+    return placed;
   }
 
   /** Pick a city near a screen point (markers) or under the ray (footprints). */

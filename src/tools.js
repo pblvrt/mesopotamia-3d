@@ -43,16 +43,19 @@ export class MeasureTool {
     this.group.clear();
     for (const p of this.pins) this.labelRoot.remove(p);
     this.pins = [];
+    if (this.midLabel) this.labelRoot.remove(this.midLabel);
+    this.midLabel = null;
     this.line = null;
     this.onResult(null);
   }
 
-  addPoint(p) {
+  addPoint(p, name) {
     if (this.points.length >= 2) this.clear();
     this.points.push({ x: p.x, z: p.z });
     const el = document.createElement('div');
     el.className = 'measure-pin';
     el.textContent = this.points.length === 1 ? 'A' : 'B';
+    if (name) el.title = name;
     const pin = new CSS2DObject(el);
     pin.center.set(0.5, 1);
     this.labelRoot.add(pin);
@@ -61,6 +64,13 @@ export class MeasureTool {
     if (this.points.length === 2) {
       const [a, b] = this.points.map((q) => unproject(q.x, q.z));
       const km = haversineKm(a, b);
+      const el2 = document.createElement('div');
+      el2.className = 'measure-label';
+      el2.innerHTML = `<b>${fmtKm(km)}</b> · ≈ ${fmtDays(km / WALK_KM_PER_DAY)} on foot`;
+      this.midLabel = new CSS2DObject(el2);
+      this.midLabel.center.set(0.5, 1.3);
+      this.labelRoot.add(this.midLabel);
+      this.update();
       this.onResult({
         km,
         walkDays: km / WALK_KM_PER_DAY,
@@ -76,6 +86,10 @@ export class MeasureTool {
     this.group.clear();
     if (this.points.length === 2) {
       const [a, b] = this.points;
+      if (this.midLabel) {
+        const mx = (a.x + b.x) / 2, mz = (a.z + b.z) / 2;
+        this.midLabel.position.set(mx, t.surfaceY(mx, mz) + 0.3, mz);
+      }
       const n = 200, arr = [];
       for (let i = 0; i <= n; i++) {
         const x = a.x + ((b.x - a.x) * i) / n, z = a.z + ((b.z - a.z) * i) / n;
